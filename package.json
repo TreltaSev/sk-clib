@@ -58,8 +58,8 @@
 	"keywords": [
 		"svelte"
 	],
+	"license": "MIT",
 	"dependencies": {
 		"sk-clib": "file:"
-	},
-	"license": "MIT"
+	}
 }
