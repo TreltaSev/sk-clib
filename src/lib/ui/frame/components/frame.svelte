@@ -1,6 +1,6 @@
 <script lang="ts">
 	// --- Logic ---
-	import { cn } from '@lib/utils';
+	import { cn, Tokenizer } from '@lib/utils';
 	import type { Props } from '..';
 
 	let {
@@ -23,6 +23,9 @@
 		...rest
 	}: Props = $props();
 
+	const tokenInstance = new Tokenizer(className);
+
+
 	function addTokenIf(statement: any, token: string) {
 		if (statement === true) {
 			className += ` ${token}`;
@@ -30,33 +33,33 @@
 	}
 
 	// Flex Box
-	addTokenIf(flex, 'flex');
-	addTokenIf(row, 'flex-row');
-	addTokenIf(col, 'flex-col');
+	tokenInstance.addTokenIf(flex, 'flex');
+	tokenInstance.addTokenIf(row, 'flex-row');
+	tokenInstance.addTokenIf(col, 'flex-col');
 
 	// Positioning
-	addTokenIf(center, 'items-center justify-center');
-	addTokenIf(centerx, 'items-center');
-	addTokenIf(centery, 'justify-center');
+	tokenInstance.addTokenIf(center, 'items-center justify-center');
+	tokenInstance.addTokenIf(centerx, 'items-center');
+	tokenInstance.addTokenIf(centery, 'justify-center');
 
 	// Size Fillings
-	addTokenIf(fill, 'size-full');
-	addTokenIf(fillw, 'w-full');
-	addTokenIf(fillh, 'h-full');
+	tokenInstance.addTokenIf(fill, 'size-full');
+	tokenInstance.addTokenIf(fillw, 'w-full');
+	tokenInstance.addTokenIf(fillh, 'h-full');
 
 	// Flex Config
-	addTokenIf(noshrink, 'shrink-0');
+	tokenInstance.addTokenIf(noshrink, 'shrink-0');
 
 	// Aspect Ratios
-	addTokenIf(aspectSquare, 'aspect-square');
+	tokenInstance.addTokenIf(aspectSquare, 'aspect-square');
 
 	// Cursor Options
-	addTokenIf(cursorAuto, 'cursor-auto');
-	addTokenIf(cursorDefault, 'cursor-default');
-	addTokenIf(cursorPointer, 'cursor-pointer');
+	tokenInstance.addTokenIf(cursorAuto, 'cursor-auto');
+	tokenInstance.addTokenIf(cursorDefault, 'cursor-default');
+	tokenInstance.addTokenIf(cursorPointer, 'cursor-pointer');
 </script>
 
-<div class={cn(className)} {...rest}>
+<div class={cn(tokenInstance.className)} {...rest}>
 	{@render children?.()}
 </div>
 

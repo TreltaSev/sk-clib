@@ -115,3 +115,39 @@ export function reference_package_to_form(package_name: string, location: string
 	window.location.href=`${base}/form${buff}`
 	return buff
 }
+
+/**
+ * A utility class for dynamically building class names based on conditional logic.
+ * This class is particularly useful for managing conditional class tokens in a structured way.
+ *
+ * ## Example Usage
+ * ```typescript
+ * let sm: undefined | boolean = true;
+ * const tokenInstance = new Tokenizer();
+ * tokenInstance.addTokenIf(sm, 'text-small');
+ *
+ * <element class={cn(tokenInstance.className)}/>
+ * ```
+ */
+export class Tokenizer {
+	public className: string | ClassValue = "";
+
+	/**
+	 * Initializes a new instance of the `Tokenizer` class with an optional initial class name.
+	 * @param className The initial class name to start with. Defaults to an empty string.
+	 */
+	constructor(className: string | null | undefined | ClassValue = "") {
+		this.className = className || "";
+	}
+
+	/**
+	 * Adds a class token to the `className` property if the provided statement evaluates to `true`.
+	 * @param statement A condition that determines whether the token should be added.
+	 * @param token The class token to add if the condition is met.
+	 */
+	public addTokenIf(statement: any, token: string) {
+		if (statement === true) {
+			this.className += ` ${token}`;
+		}
+	}
+}
