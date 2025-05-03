@@ -449,8 +449,6 @@
 
     "postcss-load-config/yaml": ["yaml@1.10.2", "", {}, ""],
 
-    "tinyglobby/picomatch": ["picomatch@4.0.2", "", {}, ""],
-
     "@typescript-eslint/typescript-estree/minimatch/brace-expansion": ["brace-expansion@2.0.1", "", { "dependencies": { "balanced-match": "^1.0.0" } }, ""],
   }
 }
