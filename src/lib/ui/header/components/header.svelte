@@ -54,7 +54,9 @@
 		as = undefined, // Catchall
 
 		// Italics
-		em
+		em,
+
+		...rest
 	}: Props = $props();
 
 	const tokenInstance = new Tokenizer(className);
@@ -100,7 +102,7 @@
 	let semanticTag = as ?? determineSemanticViaSize();
 </script>
 
-<svelte:element this={semanticTag} class={cn(tokenInstance.className)}>
+<svelte:element this={semanticTag} class={cn(tokenInstance.className)} {...rest}>
 	{@render children?.()}
 </svelte:element>
 
