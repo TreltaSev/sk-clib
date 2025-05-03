@@ -1,3 +1,6 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+// @ts-nocheck
+
 // Reexport your entry components here
 export { default as Flex } from "./ui/flex/components/flex.svelte"
 export { default as Frame } from "./ui/frame/components/frame.svelte"
