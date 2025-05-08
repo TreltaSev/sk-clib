@@ -5,7 +5,8 @@
 	"files": [
 		"dist",
 		"!dist/**/*.test.*",
-		"!dist/**/*.spec.*"
+		"!dist/**/*.spec.*",
+		"dist/styles.css"
 	],
 	"exports": {
 		".": {
@@ -15,6 +16,9 @@
 		"./ui": {
 			"types": "./dist/ui/index.d.ts",
 			"svelte": "./dist/ui/index.js"
+		},
+		"./style": {
+			"default": "./dist/styles.css"
 		}
 	},
 	"svelte": "./dist/index.js",
@@ -23,7 +27,7 @@
 		"**/*.css"
 	],
 	"scripts": {
-		"build": "svelte-package",
+		"build": "svelte-package && bunx tailwindcss -i ./src/app.css -o ./dist/styles.css",
 		"prepublishOnly": "npm run build && publint",
 		"dev": "vite dev",
 		"preview": "vite preview",
@@ -35,7 +39,7 @@
 	"peerDependencies": {
 		"@sveltejs/kit": "^2.0.0",
 		"svelte": "^5.0.0",
-		"tailwindcss": "^4.1.4"
+		"tailwindcss": "^4.1.5"
 	},
 	"devDependencies": {
 		"@sveltejs/kit": "^2.0.0",
@@ -59,6 +63,7 @@
 		"library"
 	],
 	"dependencies": {
+		"@tailwindcss/cli": "^4.1.5",
 		"sk-clib": "file:",
 		"tailwind-merge": "^3.2.0"
 	}
