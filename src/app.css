@@ -1,1 +1,2 @@
 @import 'tailwindcss';
+@source "./lib/**/*.{svelte,html,js,ts}";
