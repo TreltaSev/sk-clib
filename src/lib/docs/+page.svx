@@ -1,0 +1,5 @@
+---
+title: Example Documentation Title
+---
+
+# sk-clib documentation

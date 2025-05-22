@@ -1,0 +1,6 @@
+---
+order: 2
+title: Contributing
+---
+
+You can choose to either contribute to the documentation or the library
