@@ -1,7 +1,6 @@
 {
 	"name": "sk-clib",
 	"version": "0.0.9",
-	"type": "module",
 	"files": [
 		"dist",
 		"!dist/**/*.test.*",
