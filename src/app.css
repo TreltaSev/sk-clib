@@ -1,2 +1,29 @@
 @import 'tailwindcss';
-@source "./lib/**/*.{svelte,html,js,ts}";
+
+@theme {
+
+    /* Colors */
+	--color-primary: #ff7073;
+	--color-secondary: #70ff73;
+	--color-surface-0: #141212;
+	--color-surface-1: #1f1b1b;
+	--color-surface-2: #262222;
+	--color-accent-0: #473f3f;
+}
+
+@layer base {
+	html, body {
+		@apply size-full;
+	}
+}
+
+/* Documentation Layer, basic structure */
+@layer docs {
+	h1 {
+		color: var(--color-primary);
+	}
+
+	h2 {
+		color: var(--color-secondary)
+	}
+}
