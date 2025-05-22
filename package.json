@@ -1,10 +1,14 @@
 {
 	"name": "sk-clib",
 <<<<<<< HEAD
+<<<<<<< HEAD
 	"version": "1.2.0",
 =======
 	"version": "1.1.2",
 >>>>>>> 8820644 (chore(release): 1.1.2 [skip ci])
+=======
+	"version": "1.2.0",
+>>>>>>> 2b781cf (chore(release): 1.2.0 [skip ci])
 	"type": "module",
 	"files": [
 		"dist",
