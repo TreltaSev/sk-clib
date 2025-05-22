@@ -10,7 +10,7 @@
 
 
 <Flex fill col class="overflow-y-auto">
-	<Frame flex col fill class="text-white/80">
+	<Frame flex col fill class="text-white/80 h-fit">
 
 		<!-- Navigation Bar -->
 		<Flex row fillw centerx class="bg-surface-0 h-12 shrink-0 px-[20%]">
