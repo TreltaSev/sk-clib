@@ -1,8 +1,12 @@
 <script lang="ts">
-	import { Flex, Header } from '@lib/ui';
-	import { onMount } from 'svelte';
+	// --- Components ---
+	import { Header } from '@lib';
+    import DocTree from "./DocTree.svelte"
 
-	type DocNode = {
+	// --- Logic ---
+	import type { HTMLAttributes } from 'svelte/elements';
+
+	export type DocNode = {
 		root?: {
 			metadata?: {
 				order?: number;
@@ -13,8 +17,6 @@
 		component?: typeof import('svelte').SvelteComponent;
 		[key: string]: any;
 	};
-
-	export let node: DocNode;
 
 	/**
 	 * Sorts the children of a documentation node by their `order` metadata.
@@ -29,9 +31,13 @@
 			});
 	}
 
-	onMount(() => {
-		console.log('Rendering node:', node);
-	});
+
+	export type tProps = HTMLAttributes<HTMLDivElement> & {
+		node: DocNode,
+        prev?: string,
+	}
+
+	let { children, node, prev = $bindable(''), ...rest }: tProps | any = $props();
 </script>
 
 {#if node.root}
@@ -40,18 +46,19 @@
 
 {#each getSortedDocs(node) as [key, value]}
 	{#if value.root?.component}
-		<svelte:component this={value.root.component} />
+        <value.root.component prev={`${prev}${key ? '/' : ''}${key}`}/>
 	{:else if value.component}
-		<svelte:component this={value.component} />
+        <value.component prev={`${prev}${key ? '/' : ''}${key}`}/>
 	{/if}
 
 	{#each Object.entries(value).filter(([k]) => k !== 'root') as [subKey, subValue]}
 		{#if typeof subValue === 'object' && subValue !== null && 'component' in subValue}
 			<!-- Render actual doc file -->
-			<svelte:component this={(subValue as DocNode).component} />
+			{@const SubComponent = subValue.component as any}
+            <SubComponent prev={`${prev}${subKey ? '/' : ''}${subKey}`}/>
 		{:else if typeof subValue === 'object' && !['metadata'].includes(subKey)}
 			<!-- Recurse into folder-like object -->
-			<svelte:self node={subValue} />
+            <DocTree prev={`${prev}${subKey ? '/' : ''}${subKey}`} node={subValue}/>
 		{:else}
 			<!-- Not valid doc node -->
 		{/if}
