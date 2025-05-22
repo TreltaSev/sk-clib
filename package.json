@@ -27,7 +27,7 @@
 	],
 	"scripts": {
 		"build": "svelte-package && npx tailwindcss -i ./src/app.css -o ./dist/styles.css",
-		"prepublishOnly": "npm run build && publint",
+		"prepublishOnly": "npm run build && publint --skip-pack",
 		"dev": "vite dev",
 		"preview": "vite preview",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
