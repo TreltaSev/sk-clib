@@ -28,6 +28,7 @@
 	],
 	"scripts": {
 		"build": "svelte-package && npx tailwindcss -i ./src/app.css -o ./dist/styles.css",
+		"webbuild": "vite build",
 		"prepublishOnly": "npm run build && publint --skip-pack",
 		"dev": "vite dev",
 		"preview": "vite preview",
@@ -70,6 +71,7 @@
 		"@tailwindcss/vite": "^4.1.7",
 		"mdsvex": "^0.12.6",
 		"semantic-release": "^24.2.4",
+		"sk-clib": "file:",
 		"tailwind-merge": "^3.2.0"
 	}
 }
