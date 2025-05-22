@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/TreltaSev/sk-clib/compare/v1.0.2...v1.0.3) (2025-05-22)
+
+
+### Bug Fixes
+
+* **ci/cd:** Update publint ([109a9f7](https://github.com/TreltaSev/sk-clib/commit/109a9f76d1a823a9e85e2ff0d0747ecb23bf181d))
+
 ## [1.0.2](https://github.com/TreltaSev/sk-clib/compare/v1.0.1...v1.0.2) (2025-05-22)
 
 
