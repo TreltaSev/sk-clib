@@ -19,11 +19,19 @@
 
 /* Documentation Layer, basic structure */
 @layer docs {
+
+	header {
+		font-size: calc(var(--spacing) * 8);
+		color: var(--color-primary);
+	}
+
 	h1 {
 		color: var(--color-primary);
 	}
 
+	
+
 	h2 {
-		color: var(--color-secondary)
+		color: var(--color-gray-400);
 	}
 }

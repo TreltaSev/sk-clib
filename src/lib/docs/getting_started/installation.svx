@@ -1,0 +1,8 @@
+---
+title: 📦 Installation
+order: 1
+---
+
+```bash
+bun install sk-clib
+```
