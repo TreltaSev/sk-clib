@@ -1,3 +1,11 @@
+## [1.0.4](https://github.com/TreltaSev/sk-clib/compare/v1.0.3...v1.0.4) (2025-05-22)
+
+
+### Bug Fixes
+
+* **ci/cd:** add type module... again ([700773a](https://github.com/TreltaSev/sk-clib/commit/700773a2ec2ceefcbcdfd956950d70437c77db8e))
+* **ci/cd:** Cleanup ([88b2077](https://github.com/TreltaSev/sk-clib/commit/88b2077b125fd67561c8a0c3702cc1311725a591))
+
 ## [1.0.3](https://github.com/TreltaSev/sk-clib/compare/v1.0.2...v1.0.3) (2025-05-22)
 
 
