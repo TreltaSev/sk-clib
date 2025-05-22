@@ -3,6 +3,11 @@
 	import { Flex, Header } from '@lib';
 	import { DocsHandler } from '@doc/handler';
 
+	// --- Logic ---
+	import "@lib/prism.js"
+	import "@lib/prism.css"
+	import DocTree from '@lib/docs/DocTree.svelte';
+
 	const handler = new DocsHandler();
 	const docs = handler.docs;
 
@@ -22,6 +27,10 @@
 	<Header xxl class="font-4xl">{docs.root.metadata.title}</Header>
 {/if}
 
+<DocTree node={docs}/>
+
+
+<!-- 
 {#each getSortedDocs(docs) as [key, value]}
 	<Flex col class="gap-5">
 		{#if value.root}
@@ -31,7 +40,6 @@
 		{/if}
 
 		<Flex col class="gap-0">
-			<!-- Rendering Subfolders/files -->
 			{#each getSortedDocs(value) as [sub_key, sub_value]}
 				{#if sub_value.root}
 					<svelte:component this={sub_value.root.component} />
@@ -42,3 +50,4 @@
 		</Flex>
 	</Flex>
 {/each}
+-->

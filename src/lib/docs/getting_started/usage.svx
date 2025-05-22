@@ -5,7 +5,7 @@ order: 0
 
 Once installed, you can import and use components like this:
 
-```svelte
+```html
 <script>
   import { Header, Text } from 'sk-clib';
 </script>
