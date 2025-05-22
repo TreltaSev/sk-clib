@@ -22,18 +22,18 @@ jobs:
           cache: npm
           registry-url: https://registry.npmjs.org/
 
-      - name: Clean Install Dependencies
+      - name: Initial Clean Install
         run: npm ci
 
-      - name: Build Package
-        run: npm run build
-
-      - name: Clean up Rollup bug
+      - name: Workaround for Rollup native module issue
         run: |
           rm -rf node_modules package-lock.json
           npm install
 
-      - name: Run Semantic Release
+      - name: Build Package
+        run: npm run build
+
+      - name: Release to npm
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
