@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/TreltaSev/sk-clib/compare/v1.0.1...v1.0.2) (2025-05-22)
+
+
+### Bug Fixes
+
+* **ci/cd:** skip pack ([57df76d](https://github.com/TreltaSev/sk-clib/commit/57df76d59f6f856d30f65dfae814396a4e0dbf03))
+
 ## [1.0.1](https://github.com/TreltaSev/sk-clib/compare/v1.0.0...v1.0.1) (2025-05-22)
 
 
