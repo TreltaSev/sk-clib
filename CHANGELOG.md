@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/TreltaSev/sk-clib/compare/v1.1.1...v1.1.2) (2025-05-22)
+
+
+### Bug Fixes
+
+* remove sk-clib before running semantic-release in npmjs-release workflow ([9e0d2a7](https://github.com/TreltaSev/sk-clib/commit/9e0d2a7cc8618ddf3913fe35076880ee2b3f70df))
+
 ## [1.1.1](https://github.com/TreltaSev/sk-clib/compare/v1.1.0...v1.1.1) (2025-05-22)
 
 
