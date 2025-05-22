@@ -1,6 +1,7 @@
 {
 	"name": "sk-clib",
 	"version": "1.0.2",
+	"type": "module",
 	"files": [
 		"dist",
 		"!dist/**/*.test.*",
@@ -69,6 +70,7 @@
 		"@tailwindcss/vite": "^4.1.7",
 		"mdsvex": "^0.12.6",
 		"semantic-release": "^24.2.4",
+		"sk-clib": "file:",
 		"tailwind-merge": "^3.2.0"
 	}
 }
