@@ -6,4 +6,4 @@ title: null
 
 <header>sk-clib</header>
 
-A flexible and moduadwlar component library built for my SvelteKit projects.
+A flexible and modular component library built for my SvelteKit projects.

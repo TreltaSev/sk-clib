@@ -84,7 +84,7 @@ export class DocsHandler {
 	 * @returns A list of doc components that can be rendered
 	 */
 	public findAll(): DocComponent[] {
-		const imported_docs = import.meta.glob('@doc/**/*.{md,svx}', { eager: true });
+		const imported_docs = import.meta.glob('@doc/**/**/*.{md,svx}', { eager: true });
 
 		const parsedDocs = Object.entries(imported_docs).map(([path, module]) => {
 			return {
