@@ -41,7 +41,8 @@
 </script>
 
 {#if node.root}
-	<Header xxl class="font-4xl">{node.root?.metadata?.title}</Header>
+	{@const Component = node.root.component as any}
+	<Component prev/>
 {/if}
 
 {#each getSortedDocs(node) as [key, value]}
