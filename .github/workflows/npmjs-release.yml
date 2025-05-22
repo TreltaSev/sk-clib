@@ -26,7 +26,6 @@ jobs:
       
       - name: Clean Install Dependencies
         run: |
-          rm -rf node_modules package-lock.json
           npm install --force
 
       - name: Bump Version
