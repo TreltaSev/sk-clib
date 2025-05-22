@@ -1,3 +1,12 @@
+## [1.0.1](https://github.com/TreltaSev/sk-clib/compare/v1.0.0...v1.0.1) (2025-05-22)
+
+
+### Bug Fixes
+
+* **ci/cd:** Cleanup workfile ([e0b351c](https://github.com/TreltaSev/sk-clib/commit/e0b351cb6d68f2caa528a1658e2ea0e899714c5e))
+* **ci/cd:** Cleanup workfile x2 ([f82369a](https://github.com/TreltaSev/sk-clib/commit/f82369a7a050c6f1aca1f37df59fe39f1e34d8f0))
+* **ci/cd:** Use npx instead of bunx for build script ([325f43c](https://github.com/TreltaSev/sk-clib/commit/325f43c17a057750f68a0bceaa33a3a2fa00f54a))
+
 # 1.0.0 (2025-05-22)
 
 
