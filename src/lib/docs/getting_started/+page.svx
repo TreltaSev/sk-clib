@@ -1,7 +1,9 @@
 ---
 order: 0
-title: Getting Started
+strong: true
+title: null
 ---
 
-To get started using `sk-clib`, first you must install it:
+<header>sk-clib</header>
 
+A flexible and moduadwlar component library built for my SvelteKit projects.
