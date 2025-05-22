@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/TreltaSev/sk-clib/compare/v1.0.4...v1.1.0) (2025-05-22)
+
+
+### Features
+
+* **ci:** add Bun installation step to npm release workflow ([4710cd9](https://github.com/TreltaSev/sk-clib/commit/4710cd9dad3b5f9529764ac19ada8939a2c04835))
+
 ## [1.0.4](https://github.com/TreltaSev/sk-clib/compare/v1.0.3...v1.0.4) (2025-05-22)
 
 
