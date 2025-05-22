@@ -8,39 +8,33 @@ on:
 jobs:
   release:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
-    
-      - name: Checkout
-        uses: actions/checkout@v4
-      
-      - name: Install Node.js
+
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: npm
           registry-url: https://registry.npmjs.org/
-      
-      - name: Clean Install Dependencies
-        run: |
-          npm install --force
 
-      - name: Bump Version
+      - name: Clean Install Dependencies
+        run: npm ci
+
+      - name: Build Package
+        run: npm run build
+
+      - name: Clean up Rollup bug
         run: |
-          npm version patch --no-git-tag-version
-          git config user.name "GitHub Actions"
-          git config user.email "actions@github.com"
-          git add package.json package-lock.json
-          git commit -m "ci(bump): version"
-      
-      - name: Push version bump
-        run: git push
-      
-      - name: publish to npm
+          rm -rf node_modules package-lock.json
+          npm install
+
+      - name: Run Semantic Release
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: npx semantic-release
