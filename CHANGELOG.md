@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/TreltaSev/sk-clib/compare/v1.1.0...v1.1.1) (2025-05-22)
+
+
+### Bug Fixes
+
+* remove local file reference to sk-clib in package.json and package-lock.json ([dea2a42](https://github.com/TreltaSev/sk-clib/commit/dea2a4280a76bb82de825377068b13c2d6a4e91f))
+
 # [1.1.0](https://github.com/TreltaSev/sk-clib/compare/v1.0.4...v1.1.0) (2025-05-22)
 
 
