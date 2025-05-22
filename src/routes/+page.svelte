@@ -24,7 +24,7 @@
 </script>
 
 {#if docs.root}
-	<Header xxl class="font-4xl">{docs.root.metadata.title}</Header>
+	<Header xxl class="font-4xl">{docs.root.metadata.title} as</Header>
 {/if}
 
 <DocTree node={docs}/>
