@@ -1,0 +1,7 @@
+---
+order: 0
+title: Getting Started
+---
+
+To get started using `sk-clib`, first you must install it:
+
