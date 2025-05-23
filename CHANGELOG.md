@@ -1,3 +1,22 @@
+# [1.3.0](https://github.com/TreltaSev/sk-clib/compare/v1.2.0...v1.3.0) (2025-05-23)
+
+
+### Bug Fixes
+
+* **conflicts:** Clean package-lock.json ([a76689b](https://github.com/TreltaSev/sk-clib/commit/a76689b7fd51a99a08f2998adcd09ce093a7e91f))
+* **docs:** Margin Bottom on Docs [release] ([cf5232e](https://github.com/TreltaSev/sk-clib/commit/cf5232e1f20885ad4ef35b3e8f87a43248219139))
+
+
+### Features
+
+* **ci:** Testing [release] ([4eebef6](https://github.com/TreltaSev/sk-clib/commit/4eebef6c7acb8a8c6f7b50290822424654f5ef9f))
+* **ci:** Testing [release] main ([41bf9c7](https://github.com/TreltaSev/sk-clib/commit/41bf9c7eeedf2a7b6e7766e41c14ad1593269f91))
+* **component:** Added Spacer Component ([b135d5c](https://github.com/TreltaSev/sk-clib/commit/b135d5ca813d9869f8c10b838961225d58e40abf))
+* **component:** Added Spacer Component ([3ec0200](https://github.com/TreltaSev/sk-clib/commit/3ec0200adccff8eb79d074cdb02cfecfd96ebda4))
+* **conflicts:** Clean Up Conflicts ([226eea1](https://github.com/TreltaSev/sk-clib/commit/226eea1e4a63a48c01e3d4257777949051c3f917))
+* **docs:** Add github and npm links to nav bar ([c812699](https://github.com/TreltaSev/sk-clib/commit/c8126999d0e5e083f9bdad1bffa836abcdf9be12))
+* **docs:** Trigger Documentation Action [release] ([a00370e](https://github.com/TreltaSev/sk-clib/commit/a00370e67f4eb0f91432db2c13408a89d05fef83))
+
 >>>>>>> 2b781cf (chore(release): 1.2.0 [skip ci])
 >>>>>>> bd4af10 (chore(release): 1.2.0 [skip ci])
 # [1.2.0](https://github.com/TreltaSev/sk-clib/compare/v1.1.2...v1.2.0) (2025-05-22)
