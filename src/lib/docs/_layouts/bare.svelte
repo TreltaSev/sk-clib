@@ -7,6 +7,8 @@
 	} = $props();
 </script>
 
-<Header xl class="mt-5" id={`${prev}`}>{title}</Header>
+<a href={`#${prev}`}>
+	<Header xxl class="mt-5" id={`${prev}`}>{title}</Header>
+</a>
 
 {@render children?.()}
