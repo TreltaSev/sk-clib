@@ -1,61 +1,22 @@
-# sk-clib
+# [sk-clib](https://treltasev.github.io/sk-clib/)
+
+[![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white)](https://www.npmjs.com/package/sk-clib)
 
 A flexible and modular component library built for my SvelteKit projects.
 
 ## 📦 Installation
 
 ```bash
-bun install sk-clib
+npm install sk-clib # Install from npmjs
 ```
 
-## 🔧 Usage
+```css
+/* app.css */
+@import 'sk-clib/style';
 
-Once installed, you can import and use components like this:
-
-```svelte
-<script>
-  import { Header, Text } from 'sk-clib';
-</script>
-
-<Header lg bold>Welp... Hi there :)</Header>
-<Text size="lg" weight="bold">Hello World</Text>
+/* ... Other Styling ... */
 ```
 
-If you're using path aliases, make sure to configure them properly in your `tsconfig.json` or `jsconfig.json`.
+## 🔧 Documentation
 
-## 🛠 Development
-
-To contribute or develop locally:
-
-```bash
-bun clone https://github.com/TreltaSev/sk-clib.git
-cd sk-clib
-bun install
-bun run dev
-```
-
-This will launch the SvelteKit dev environment so you can view and test components live.
-
-### Commands
-
-* `npm run dev` – Start development server with live preview
-* `npm run build` – Build the library for publishing
-* `npm run lint` – Lint codebase
-* `npm run check` – Run type checking
-* `npm run test` – (If applicable) Run tests
-
-## ✅ Publishing
-
-Make sure everything builds correctly:
-
-```bash
-bun run build
-```
-
-Then publish:
-
-```bash
-bun publish
-```
-
-> Ensure your version is bumped and `package.json` is clean of any local dependencies before publishing.
+Take a look at [https://treltasev.github.io/sk-clib/](https://treltasev.github.io/sk-clib/)
