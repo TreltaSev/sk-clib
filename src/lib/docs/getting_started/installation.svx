@@ -4,5 +4,12 @@ order: 1
 ---
 
 ```bash
-bun install sk-clib
+npm install sk-clib # Install from npmjs
+```
+
+```css
+/* app.css */
+@import 'sk-clib/style';
+
+/* ... Other Styling ... */
 ```
