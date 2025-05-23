@@ -9,7 +9,7 @@
 
 
 
-<Flex fill col class="overflow-y-auto">
+<Flex fill col class="overflow-y-auto scroll-smooth">
 	<Frame flex col fill class="text-white/80 h-fit">
 
 		<!-- Navigation Bar -->

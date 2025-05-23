@@ -1,8 +1,7 @@
 @import 'tailwindcss';
 
 @theme {
-
-    /* Colors */
+	/* Colors */
 	--color-primary: #ff7073;
 	--color-secondary: #70ff73;
 	--color-surface-0: #141212;
@@ -12,7 +11,8 @@
 }
 
 @layer base {
-	html, body {
+	html,
+	body {
 		@apply size-full overflow-y-auto;
 		background-color: var(--color-surface-2);
 	}
@@ -20,19 +20,25 @@
 
 /* Documentation Layer, basic structure */
 @layer docs {
-
 	header {
 		font-size: calc(var(--spacing) * 8);
 		color: var(--color-primary);
 	}
 
-	h1 {
-		color: var(--color-primary);
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		color: var(--color-gray-400);
+		margin-top: calc((var(--spacing) * 5));
 	}
 
-	
-
-	h2 {
-		color: var(--color-gray-400);
+	/* Code Blocks */
+	pre {
+		@apply flex;
+		flex-shrink: 0;
+		max-height: 20vh;
 	}
 }
