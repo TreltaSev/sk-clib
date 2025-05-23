@@ -1,10 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 >>>>>>> 2b781cf (chore(release): 1.2.0 [skip ci])
-=======
 >>>>>>> bd4af10 (chore(release): 1.2.0 [skip ci])
 # [1.2.0](https://github.com/TreltaSev/sk-clib/compare/v1.1.2...v1.2.0) (2025-05-22)
 
@@ -14,16 +8,7 @@
 * **docs:** Add h-fit ([25bfa14](https://github.com/TreltaSev/sk-clib/commit/25bfa148aa546e6a5a0f20e6f33d6406f42dceff))
 * **docs:** Update structure ([7460f38](https://github.com/TreltaSev/sk-clib/commit/7460f38bf5979981fdc3779aca13413209cccc7a))
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 8820644 (chore(release): 1.1.2 [skip ci])
-=======
 >>>>>>> 2b781cf (chore(release): 1.2.0 [skip ci])
-=======
->>>>>>> 99f7086 (chore(release): 1.1.2 [skip ci])
-=======
->>>>>>> bd4af10 (chore(release): 1.2.0 [skip ci])
 ## [1.1.2](https://github.com/TreltaSev/sk-clib/compare/v1.1.1...v1.1.2) (2025-05-22)
 
 
