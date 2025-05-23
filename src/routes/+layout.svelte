@@ -9,7 +9,7 @@
 
 
 
-<Flex fill col class="overflow-y-auto scroll-smooth">
+<Flex col class="overflow-y-auto w-full scroll-smooth mb-20">
 	<Frame flex col fill class="text-white/80 h-fit">
 
 		<!-- Navigation Bar -->
@@ -22,9 +22,6 @@
 			{@render children()}
 		</Flex>
 	</Frame>
-
-	<!-- Spacer -->
-	<Frame class="h-20 shrink-0"></Frame>
 </Flex>
 
 
