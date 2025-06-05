@@ -27,7 +27,7 @@
 		"**/*.css"
 	],
 	"scripts": {
-		"build": "svelte-package && npx tailwindcss -i ./src/app.css -o ./dist/styles.css",
+		"build": "svelte-package && npm run css_build",
 		"webbuild": "vite build",
 		"prepublishOnly": "npm run build && publint --skip-pack",
 		"dev": "vite dev",
@@ -35,7 +35,8 @@
 		"check": "svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
 		"format": "prettier --write .",
-		"lint": "prettier --check . && eslint ."
+		"lint": "prettier --check . && eslint .",
+		"css_build": "npx tailwindcss -i ./src/library.css -o ./dist/styles.css"
 	},
 	"peerDependencies": {
 		"@sveltejs/kit": "^2.0.0",
