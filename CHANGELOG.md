@@ -1,3 +1,21 @@
+# [1.4.0](https://github.com/TreltaSev/sk-clib/compare/v1.3.0...v1.4.0) (2025-06-05)
+
+
+### Bug Fixes
+
+* **conflict:** Cleaned Up a conflict ([123dead](https://github.com/TreltaSev/sk-clib/commit/123deadd216009af02c0aef242790e46c29c304a))
+* **docs:** Margin Bottom on Docs [release] ([d7435d9](https://github.com/TreltaSev/sk-clib/commit/d7435d98f20dfdce8ba1e02e6a55347e468d1392))
+* **style-independence:** Library style no longer tied with documentation style ([c69905e](https://github.com/TreltaSev/sk-clib/commit/c69905e8cb930bc2ef5c6943df11fb3fa49a97af))
+* **sync:** Sync package & package-lock ([fc11a0b](https://github.com/TreltaSev/sk-clib/commit/fc11a0bf8a7519ad8014b7a850d36eef3b2bbacb))
+
+
+### Features
+
+* **ci:** Testing [release] ([0dfa0b2](https://github.com/TreltaSev/sk-clib/commit/0dfa0b27184533ca5dd46f358a6de18df626832b))
+* **ci:** Testing [release] main ([0869d7a](https://github.com/TreltaSev/sk-clib/commit/0869d7a078fe6e18a794e16d6b6c79efe8ebcfa2))
+* **docs:** Add github and npm links to nav bar ([9a85fc8](https://github.com/TreltaSev/sk-clib/commit/9a85fc8de356f83ef6f306584858f43256f0b61f))
+* **docs:** Trigger Documentation Action [release] ([af7bcf5](https://github.com/TreltaSev/sk-clib/commit/af7bcf510e680b88bec22726b7b46682b7c0a94e))
+
 # [1.3.0](https://github.com/TreltaSev/sk-clib/compare/v1.2.0...v1.3.0) (2025-05-23)
 
 
