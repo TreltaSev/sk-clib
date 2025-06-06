@@ -2,7 +2,8 @@ name: Deploy to Github Pages
 
 on:
   push:
-    branches: 'main'
+    paths:
+        - 'packages/site'
 
 jobs:
   build_site:
@@ -19,11 +20,13 @@ jobs:
           cache: npm
       
       - name: Clean Install Dependencies
+        working-directory: packages/site
         run: |
           rm -rf node_modules package-lock.json
           npm install --force
 
       - name: Build
+        working-directory: packages/site
         env:
           BASE_PATH: '/${{ github.event.repository.name }}'  # Set BASE_PATH dynamically
         run: npm run webbuild
@@ -31,7 +34,7 @@ jobs:
       - name: Upload Artifacts
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'build/'
+          path: 'packages/site/build'
 
   deploy:
     needs: build_site
