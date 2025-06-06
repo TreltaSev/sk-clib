@@ -13,11 +13,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       
-      - name: Install Node.js
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: npm
+          registry-url: https://registry.npmjs.org/
+          cache-dependency-path: packages/site/package-lock.json
       
       - name: Clean Install Dependencies
         working-directory: packages/site
