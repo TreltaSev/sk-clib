@@ -3,4 +3,4 @@ order: 1
 title: Contributing to Documentation
 ---
 
-Just add '[release]' to your commit message and push to main.
+Modifying any file within packages/site, then pushing will trigger an update.
