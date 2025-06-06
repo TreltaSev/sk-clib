@@ -3,7 +3,8 @@ name: Publish Package
 on:
   push:
     paths:
-      - 'packages/sk-clib'
+      - 'packages/sk-clib/**'
+  workflow_dispatch:
 
 jobs:
   release:

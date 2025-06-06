@@ -4,6 +4,7 @@ on:
   push:
     paths:
         - 'packages/site/**'
+  workflow_dispatch:
 
 jobs:
   build_site:
