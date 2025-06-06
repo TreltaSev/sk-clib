@@ -1,0 +1,29 @@
+---
+title: Contributing
+---
+
+You can choose to either contribute to the documentation or the library, either way, you'll need to cloen this repo, most likeley as a fork.
+```bash
+bun clone https://github.com/TreltaSev/sk-clib.git
+cd sk-clib
+npm install
+npm run dev
+```
+
+This should be enough to get you started.
+
+
+## Commands
+- `npm run dev` – Start development server with live preview
+- `npm run build` – Build the library for publishing
+- `npm run lint` – Lint codebase
+- `npm run check` – Run type checking
+- `npm run test` – (If applicable) Run tests
+
+## ✅ Publishing
+
+Make sure everything builds correctly:
+
+```bash
+npm run build
+```
