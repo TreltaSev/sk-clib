@@ -22,6 +22,7 @@ jobs:
           node-version: 20
           cache: npm
           registry-url: https://registry.npmjs.org/
+          cache-dependency-path: packages/sk-clib/package-lock.json
 
       - name: Initial Clean Install
         working-directory: packages/sk-clib
