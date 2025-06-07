@@ -16,31 +16,22 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v1
         with:
-          node-version: 20
-          cache: npm
-          registry-url: https://registry.npmjs.org/
-          cache-dependency-path: packages/sk-clib/package-lock.json
+          bun-version: latest
 
-      - name: Initial Clean Install
+      - name: Initial Bun Installation
         working-directory: packages/sk-clib
-        run: npm ci
-
-      - name: Workaround for Rollup native module issue
-        working-directory: packages/sk-clib
-        run: |
-          rm -rf node_modules package-lock.json
-          npm install
+        run: bun i
 
       - name: Build Package
         working-directory: packages/sk-clib
-        run: npm run build
+        run: bun run build
 
       - name: Release to npm
         working-directory: packages/sk-clib
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npm rm sk-clib && npx semantic-release
+        run: bun remove sk-clib && bunx semantic-release
