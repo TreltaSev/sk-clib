@@ -21,4 +21,5 @@
 
     # Button Component
     Simple button component for easy customization and easy onclick functionality
+	Button is easily configured, colored, and will also abide to WCAG standards.
 -->
