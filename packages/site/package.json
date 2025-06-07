@@ -1,5 +1,5 @@
 {
-	"name": "sk-clib",
+	"name": "sk-clib-documentation-site",
 	"type": "module",
 	"scripts": {
 		"build": "svelte-package && npm run css_build",
