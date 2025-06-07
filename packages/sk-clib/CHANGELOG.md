@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/TreltaSev/sk-clib/compare/v1.5.0...v1.6.0) (2025-06-07)
+
+
+### Features
+
+* **button:** Added a new line, testingout feature ([25a606e](https://github.com/TreltaSev/sk-clib/commit/25a606e2c49875a48b9ccad62e900d06df719476))
+
 # [1.5.0](https://github.com/TreltaSev/sk-clib/compare/v1.4.0...v1.5.0) (2025-06-07)
 
 
