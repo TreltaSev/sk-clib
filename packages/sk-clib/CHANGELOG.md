@@ -4,6 +4,30 @@
 ### Bug Fixes
 
 * **ci/cd:** Added Missing Package: '@sveltejs/adapter-auto' ([592044f](https://github.com/TreltaSev/sk-clib/commit/592044f9983d08dac2d969f4533712df676c471f))
+* **ci/cd:** Cleanup tsconfig.json ([10438b4](https://github.com/TreltaSev/sk-clib/commit/10438b49be63561b135033341fe15ccd62c0f9c0))
+* **ci/cd:** Cleanup workflows ([2f43790](https://github.com/TreltaSev/sk-clib/commit/2f437902e952ebb2a629fc8580b7d1e46aca06b8))
+* **ci/cd:** Fix bun workflow for release ([f2dfa99](https://github.com/TreltaSev/sk-clib/commit/f2dfa999dc39194541ce2d56f689d4710fd7d25f))
+* **ci/cd:** Fixed site deployment if statement ([92b3653](https://github.com/TreltaSev/sk-clib/commit/92b3653ad6e13c1d9457c65b827d534b91590b15))
+* **ci/cd:** Removed unused lock file ([b687faf](https://github.com/TreltaSev/sk-clib/commit/b687fafaf043b059d193a8ecb8b56daa0ac03519))
+* **ci/cd:** Revert to package-lock instead of bun ([250e040](https://github.com/TreltaSev/sk-clib/commit/250e040491e9bedb141625aa43e2e8deeac85478))
+* **ci/cd:** Update Release Configuration ([66be33d](https://github.com/TreltaSev/sk-clib/commit/66be33d436144e04b30a76b7411162bb878cbba5))
+* **conflicts:** Clean package-lock.json ([742df3f](https://github.com/TreltaSev/sk-clib/commit/742df3fed08b3ee6a4d865ba691c6b6d678e744d))
+* **re-add:** re-added the utils that I removed ;( ([3cf3439](https://github.com/TreltaSev/sk-clib/commit/3cf3439f577e2a4babd542acca7c8e6b3da1aba4))
+
+
+### Features
+
+* **ci/cd:** [sk-clib] Move to bun instead of npm ([60d58fe](https://github.com/TreltaSev/sk-clib/commit/60d58fe584862b43e1dcba36f7b7d14488abf11c))
+* **component:** Added Spacer Component ([3f3afcd](https://github.com/TreltaSev/sk-clib/commit/3f3afcda9f867c7a9d28e36b4cc91e48059ba613))
+* **docs:** Trigger Documentation Action [release] ([bf03811](https://github.com/TreltaSev/sk-clib/commit/bf038117b74bcfb0010efd39767e0be43eee3179))
+* **playground:** Added incredibly simple playground for development ([5a92e1f](https://github.com/TreltaSev/sk-clib/commit/5a92e1f5a9f2a0ba9b4a629b6e1ee75be69dbade))
+
+# [1.5.0](https://github.com/TreltaSev/sk-clib/compare/v1.4.0...v1.5.0) (2025-06-07)
+
+
+### Bug Fixes
+
+* **ci/cd:** Added Missing Package: '@sveltejs/adapter-auto' ([592044f](https://github.com/TreltaSev/sk-clib/commit/592044f9983d08dac2d969f4533712df676c471f))
 * **ci/cd:** Cleanup workflows ([2f43790](https://github.com/TreltaSev/sk-clib/commit/2f437902e952ebb2a629fc8580b7d1e46aca06b8))
 * **ci/cd:** Fix bun workflow for release ([f2dfa99](https://github.com/TreltaSev/sk-clib/commit/f2dfa999dc39194541ce2d56f689d4710fd7d25f))
 * **ci/cd:** Fixed site deployment if statement ([92b3653](https://github.com/TreltaSev/sk-clib/commit/92b3653ad6e13c1d9457c65b827d534b91590b15))
