@@ -29,6 +29,12 @@ jobs:
         working-directory: packages/sk-clib
         run: bun run build
 
+      - name: Write npm token to .npmrc
+        working-directory: packages/sk-clib
+        run: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
       - name: Release to npm
         working-directory: packages/sk-clib
         env:
