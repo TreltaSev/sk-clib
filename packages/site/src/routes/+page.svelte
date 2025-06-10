@@ -13,6 +13,12 @@
 </script>
 
 <Frame fill class="grid grid-cols-[20%_1fr_20%]">
+
+	<!-- Table of Contents -->
+	<Frame fill class="col-start-1">
+
+	</Frame>
+
 	<Frame fill class="col-start-2">
 		<DocTree node={docs}/>
 	</Frame>
