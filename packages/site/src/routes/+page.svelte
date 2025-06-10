@@ -1,5 +1,6 @@
 <script lang="ts">
 	// --- Components ---
+	import { Frame } from 'sk-clib';
 	import { DocsHandler } from '@doc/handler';
 
 	// --- Logic ---
@@ -11,4 +12,8 @@
 	const docs = handler.docs;
 </script>
 
-<DocTree node={docs}/>
+<Frame fill class="grid grid-cols-[20%_1fr_20%]">
+	<Frame fill class="col-start-2">
+		<DocTree node={docs}/>
+	</Frame>
+</Frame>

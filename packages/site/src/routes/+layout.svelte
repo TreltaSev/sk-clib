@@ -26,7 +26,7 @@
 		</Flex>
 
 		<!-- Content -->
-		<Flex col fill class="px-[20%]">
+		<Flex col fill>
 			{@render children()}
 		</Flex>
 	</Frame>
