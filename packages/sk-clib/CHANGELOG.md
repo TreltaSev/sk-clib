@@ -1,3 +1,16 @@
+# [1.7.0](https://github.com/TreltaSev/sk-clib/compare/v1.6.0...v1.7.0) (2025-07-08)
+
+
+### Bug Fixes
+
+* **vite-config:** Fixed fs allow shenanagens. ([cedc265](https://github.com/TreltaSev/sk-clib/commit/cedc26579059f2b2c7a8e92d0315fc3cb1da5fad))
+
+
+### Features
+
+* **props-export:** Export Props ([ffe2b44](https://github.com/TreltaSev/sk-clib/commit/ffe2b44523f2d34aa533ad2d64a1c0f3cf987c0a))
+* **toc:** Table of contents scaffold ([cc149ec](https://github.com/TreltaSev/sk-clib/commit/cc149ec13f77bd171dd2ae522bf6a3d80ac60a00))
+
 # [1.6.0](https://github.com/TreltaSev/sk-clib/compare/v1.5.0...v1.6.0) (2025-06-07)
 
 
