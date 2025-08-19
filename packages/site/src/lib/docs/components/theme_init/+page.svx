@@ -1,0 +1,21 @@
+---
+title: ThemeInit
+---
+
+```typescript
+import { ThemeInit } from "@sk-clib/theme"
+```
+
+Generates and stores a theme. Place this component in +layout.svelte
+
+Its not implemented yet, planned for v2.0.0, but it would work a little like this:
+
+```html
+<script>
+    import {theme, ThemeInit} from "@sk-clib/theme"
+
+    // "theme" exposes seedColor, mode, and variant
+</script>
+
+<ThemeInit options={{defaultColor: "f8a7c3", defaultMode: "dark", defaultVariant: "vibrant"}}/>
+```
