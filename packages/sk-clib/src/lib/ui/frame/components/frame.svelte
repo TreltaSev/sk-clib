@@ -32,6 +32,25 @@
 		cursorAuto = $bindable(undefined),
 		cursorDefault = $bindable(undefined),
 		cursorPointer = $bindable(undefined),
+
+		// Theme Colors
+		background = $bindable(undefined),
+		primary = $bindable(undefined),
+		primaryContainer = $bindable(undefined),
+		secondary = $bindable(undefined),
+		secondaryContainer = $bindable(undefined),
+		tertiary = $bindable(undefined),
+		tertiaryContainer = $bindable(undefined),
+		error = $bindable(undefined),
+		surface = $bindable(undefined),
+		surfaceVariant = $bindable(undefined),
+		outline = $bindable(undefined),
+		outlineVariant = $bindable(undefined),
+		shadow = $bindable(undefined),
+		scrim = $bindable(undefined),
+		inverseSurface = $bindable(undefined),
+		inversePrimary = $bindable(undefined),
+
 		...rest
 	}: Props = $props();
 
