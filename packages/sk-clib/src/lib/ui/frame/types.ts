@@ -30,4 +30,22 @@ export type tFrameProps = HTMLAttributes<HTMLDivElement> & {
     cursorAuto?: boolean;
     cursorDefault?: boolean;
     cursorPointer?: boolean;
+
+    // Theme Colors
+    background?: boolean;
+    primary?: boolean;
+    primaryContainer?: boolean;
+    secondary?: boolean;
+    secondaryContainer?: boolean;
+    tertiary?: boolean;
+    tertiaryContainer?: boolean;
+    error?: boolean;
+    surface?: boolean;
+    surfaceVariant?: boolean;
+    outline?: boolean;
+    outlineVariant?: boolean;
+    shadow?: boolean;
+    scrim?: boolean;
+    inverseSurface?: boolean;
+    inversePrimary?: boolean;
 };
