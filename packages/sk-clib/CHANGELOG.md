@@ -1,3 +1,11 @@
+# [1.8.0](https://github.com/TreltaSev/sk-clib/compare/v1.7.0...v1.8.0) (2025-08-22)
+
+
+### Features
+
+* **docs:** Update theme_init docs ([44b1ecf](https://github.com/TreltaSev/sk-clib/commit/44b1ecf28dee2f9bbf34da3989127d1f905a4f62))
+* **major:** Added theme component and logic ([b136416](https://github.com/TreltaSev/sk-clib/commit/b1364161ee806004a43a8a142afde18824f5548b))
+
 # [1.7.0](https://github.com/TreltaSev/sk-clib/compare/v1.6.0...v1.7.0) (2025-07-08)
 
 
