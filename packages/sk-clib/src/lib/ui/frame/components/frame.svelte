@@ -6,17 +6,29 @@
 	let {
 		children,
 		class: className,
+
+		// Flex Box
 		flex = $bindable(undefined),
 		row = $bindable(undefined),
 		col = $bindable(undefined),
+
+		// Positioning
 		center = $bindable(undefined),
 		centerx = $bindable(undefined),
 		centery = $bindable(undefined),
+
+		// Size Fillings
 		fill = $bindable(undefined),
 		fillw = $bindable(undefined),
 		fillh = $bindable(undefined),
+
+		// Flex Config
 		noshrink = $bindable(undefined),
+
+		// Aspect Ratios
 		aspectSquare = $bindable(undefined),
+
+		// Cursor options
 		cursorAuto = $bindable(undefined),
 		cursorDefault = $bindable(undefined),
 		cursorPointer = $bindable(undefined),
