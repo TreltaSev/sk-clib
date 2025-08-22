@@ -88,6 +88,25 @@
 	tokenInstance.addTokenIf(cursorAuto, 'cursor-auto');
 	tokenInstance.addTokenIf(cursorDefault, 'cursor-default');
 	tokenInstance.addTokenIf(cursorPointer, 'cursor-pointer');
+
+	// Background Options
+	tokenInstance.addTokenIf(background, 'bg-background');
+	tokenInstance.addTokenIf(primary, 'bg-primary');
+	tokenInstance.addTokenIf(primaryContainer, 'bg-primary-container');
+	tokenInstance.addTokenIf(secondary, 'bg-secondary');
+	tokenInstance.addTokenIf(secondaryContainer, 'bg-secondary-container');
+	tokenInstance.addTokenIf(tertiary, 'bg-tertiary');
+	tokenInstance.addTokenIf(tertiaryContainer, 'bg-tertiary-container');
+	tokenInstance.addTokenIf(error, 'bg-error');
+	tokenInstance.addTokenIf(surface, 'bg-surface');
+	tokenInstance.addTokenIf(surfaceVariant, 'bg-surface-variant');
+	tokenInstance.addTokenIf(outline, 'bg-outline');
+	tokenInstance.addTokenIf(outlineVariant, 'bg-outline-variant');
+	tokenInstance.addTokenIf(shadow, 'bg-shadow');
+	tokenInstance.addTokenIf(scrim, 'bg-scrim');
+	tokenInstance.addTokenIf(inverseSurface, 'bg-inverse-surface');
+	tokenInstance.addTokenIf(inversePrimary, 'bg-inverse-primary');
+
 </script>
 
 <div class={cn(tokenInstance.className)} {...rest}>
