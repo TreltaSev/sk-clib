@@ -1,0 +1,416 @@
+@import 'tailwindcss';
+
+/* Theme */
+@layer utilities {
+	.bg-background > * {
+		color: var(--color-on-background);
+	}
+
+	.bg-primary-container > * {
+		color: var(--color-on-primary-container);
+	}
+
+	.bg-secondary > * {
+		color: var(--color-on-secondary);
+	}
+
+	.bg-secondary-container > * {
+		color: var(--color-on-secondary-container);
+	}
+
+	.bg-tertiary > * {
+		color: var(--color-on-tertiary);
+	}
+
+	.bg-tertiary-container > * {
+		color: var(--color-on-tertiary-container);
+	}
+
+	.bg-error > * {
+		color: var(--color-on-error);
+	}
+
+	.bg-surface > * {
+		color: var(--color-on-surface);
+	}
+
+	.bg-surface-variant > * {
+		color: var(--color-on-surface-variant);
+	}
+
+	.bg-outline > * {
+		color: var(--color-on-outline);
+	}
+
+	.bg-outline-variant > * {
+		color: var(--color-on-outline-variant);
+	}
+
+	.bg-shadow > * {
+		color: var(--color-on-shadow);
+	}
+
+	.bg-scrim > * {
+		color: var(--color-on-scrim);
+	}
+
+	.bg-inverse-surface > * {
+		color: var(--color-on-inverse-surface);
+	}
+
+	.bg-inverse-primary > * {
+		color: var(--color-on-inverse-primary);
+	}
+}
+
+/* Tailwind-Like classes for color variables */
+@layer utilities {
+	.bg-primary {
+		background: var(--color-primary);
+	}
+	.text-primary {
+		color: var(--color-primary);
+	}
+	.border-primary {
+		border-color: var(--color-primary);
+	}
+	.ring-primary {
+		--tw-ring-color: var(--color-primary);
+	}
+	.bg-on-primary {
+		background: var(--color-on-primary);
+	}
+	.text-on-primary {
+		color: var(--color-on-primary);
+	}
+	.border-on-primary {
+		border-color: var(--color-on-primary);
+	}
+	.ring-on-primary {
+		--tw-ring-color: var(--color-on-primary);
+	}
+	.bg-primary-container {
+		background: var(--color-primary-container);
+	}
+	.text-primary-container {
+		color: var(--color-primary-container);
+	}
+	.border-primary-container {
+		border-color: var(--color-primary-container);
+	}
+	.ring-primary-container {
+		--tw-ring-color: var(--color-primary-container);
+	}
+	.bg-on-primary-container {
+		background: var(--color-on-primary-container);
+	}
+	.text-on-primary-container {
+		color: var(--color-on-primary-container);
+	}
+	.border-on-primary-container {
+		border-color: var(--color-on-primary-container);
+	}
+	.ring-on-primary-container {
+		--tw-ring-color: var(--color-on-primary-container);
+	}
+	.bg-secondary {
+		background: var(--color-secondary);
+	}
+	.text-secondary {
+		color: var(--color-secondary);
+	}
+	.border-secondary {
+		border-color: var(--color-secondary);
+	}
+	.ring-secondary {
+		--tw-ring-color: var(--color-secondary);
+	}
+	.bg-on-secondary {
+		background: var(--color-on-secondary);
+	}
+	.text-on-secondary {
+		color: var(--color-on-secondary);
+	}
+	.border-on-secondary {
+		border-color: var(--color-on-secondary);
+	}
+	.ring-on-secondary {
+		--tw-ring-color: var(--color-on-secondary);
+	}
+	.bg-secondary-container {
+		background: var(--color-secondary-container);
+	}
+	.text-secondary-container {
+		color: var(--color-secondary-container);
+	}
+	.border-secondary-container {
+		border-color: var(--color-secondary-container);
+	}
+	.ring-secondary-container {
+		--tw-ring-color: var(--color-secondary-container);
+	}
+	.bg-on-secondary-container {
+		background: var(--color-on-secondary-container);
+	}
+	.text-on-secondary-container {
+		color: var(--color-on-secondary-container);
+	}
+	.border-on-secondary-container {
+		border-color: var(--color-on-secondary-container);
+	}
+	.ring-on-secondary-container {
+		--tw-ring-color: var(--color-on-secondary-container);
+	}
+	.bg-tertiary {
+		background: var(--color-tertiary);
+	}
+	.text-tertiary {
+		color: var(--color-tertiary);
+	}
+	.border-tertiary {
+		border-color: var(--color-tertiary);
+	}
+	.ring-tertiary {
+		--tw-ring-color: var(--color-tertiary);
+	}
+	.bg-on-tertiary {
+		background: var(--color-on-tertiary);
+	}
+	.text-on-tertiary {
+		color: var(--color-on-tertiary);
+	}
+	.border-on-tertiary {
+		border-color: var(--color-on-tertiary);
+	}
+	.ring-on-tertiary {
+		--tw-ring-color: var(--color-on-tertiary);
+	}
+	.bg-tertiary-container {
+		background: var(--color-tertiary-container);
+	}
+	.text-tertiary-container {
+		color: var(--color-tertiary-container);
+	}
+	.border-tertiary-container {
+		border-color: var(--color-tertiary-container);
+	}
+	.ring-tertiary-container {
+		--tw-ring-color: var(--color-tertiary-container);
+	}
+	.bg-on-tertiary-container {
+		background: var(--color-on-tertiary-container);
+	}
+	.text-on-tertiary-container {
+		color: var(--color-on-tertiary-container);
+	}
+	.border-on-tertiary-container {
+		border-color: var(--color-on-tertiary-container);
+	}
+	.ring-on-tertiary-container {
+		--tw-ring-color: var(--color-on-tertiary-container);
+	}
+	.bg-error {
+		background: var(--color-error);
+	}
+	.text-error {
+		color: var(--color-error);
+	}
+	.border-error {
+		border-color: var(--color-error);
+	}
+	.ring-error {
+		--tw-ring-color: var(--color-error);
+	}
+	.bg-on-error {
+		background: var(--color-on-error);
+	}
+	.text-on-error {
+		color: var(--color-on-error);
+	}
+	.border-on-error {
+		border-color: var(--color-on-error);
+	}
+	.ring-on-error {
+		--tw-ring-color: var(--color-on-error);
+	}
+	.bg-error-container {
+		background: var(--color-error-container);
+	}
+	.text-error-container {
+		color: var(--color-error-container);
+	}
+	.border-error-container {
+		border-color: var(--color-error-container);
+	}
+	.ring-error-container {
+		--tw-ring-color: var(--color-error-container);
+	}
+	.bg-on-error-container {
+		background: var(--color-on-error-container);
+	}
+	.text-on-error-container {
+		color: var(--color-on-error-container);
+	}
+	.border-on-error-container {
+		border-color: var(--color-on-error-container);
+	}
+	.ring-on-error-container {
+		--tw-ring-color: var(--color-on-error-container);
+	}
+	.bg-background {
+		background: var(--color-background);
+	}
+	.text-background {
+		color: var(--color-background);
+	}
+	.border-background {
+		border-color: var(--color-background);
+	}
+	.ring-background {
+		--tw-ring-color: var(--color-background);
+	}
+	.bg-on-background {
+		background: var(--color-on-background);
+	}
+	.text-on-background {
+		color: var(--color-on-background);
+	}
+	.border-on-background {
+		border-color: var(--color-on-background);
+	}
+	.ring-on-background {
+		--tw-ring-color: var(--color-on-background);
+	}
+	.bg-surface {
+		background: var(--color-surface);
+	}
+	.text-surface {
+		color: var(--color-surface);
+	}
+	.border-surface {
+		border-color: var(--color-surface);
+	}
+	.ring-surface {
+		--tw-ring-color: var(--color-surface);
+	}
+	.bg-on-surface {
+		background: var(--color-on-surface);
+	}
+	.text-on-surface {
+		color: var(--color-on-surface);
+	}
+	.border-on-surface {
+		border-color: var(--color-on-surface);
+	}
+	.ring-on-surface {
+		--tw-ring-color: var(--color-on-surface);
+	}
+	.bg-surface-variant {
+		background: var(--color-surface-variant);
+	}
+	.text-surface-variant {
+		color: var(--color-surface-variant);
+	}
+	.border-surface-variant {
+		border-color: var(--color-surface-variant);
+	}
+	.ring-surface-variant {
+		--tw-ring-color: var(--color-surface-variant);
+	}
+	.bg-on-surface-variant {
+		background: var(--color-on-surface-variant);
+	}
+	.text-on-surface-variant {
+		color: var(--color-on-surface-variant);
+	}
+	.border-on-surface-variant {
+		border-color: var(--color-on-surface-variant);
+	}
+	.ring-on-surface-variant {
+		--tw-ring-color: var(--color-on-surface-variant);
+	}
+	.bg-outline {
+		background: var(--color-outline);
+	}
+	.text-outline {
+		color: var(--color-outline);
+	}
+	.border-outline {
+		border-color: var(--color-outline);
+	}
+	.ring-outline {
+		--tw-ring-color: var(--color-outline);
+	}
+	.bg-outline-variant {
+		background: var(--color-outline-variant);
+	}
+	.text-outline-variant {
+		color: var(--color-outline-variant);
+	}
+	.border-outline-variant {
+		border-color: var(--color-outline-variant);
+	}
+	.ring-outline-variant {
+		--tw-ring-color: var(--color-outline-variant);
+	}
+	.bg-shadow {
+		background: var(--color-shadow);
+	}
+	.text-shadow {
+		color: var(--color-shadow);
+	}
+	.border-shadow {
+		border-color: var(--color-shadow);
+	}
+	.ring-shadow {
+		--tw-ring-color: var(--color-shadow);
+	}
+	.bg-scrim {
+		background: var(--color-scrim);
+	}
+	.text-scrim {
+		color: var(--color-scrim);
+	}
+	.border-scrim {
+		border-color: var(--color-scrim);
+	}
+	.ring-scrim {
+		--tw-ring-color: var(--color-scrim);
+	}
+	.bg-inverse-surface {
+		background: var(--color-inverse-surface);
+	}
+	.text-inverse-surface {
+		color: var(--color-inverse-surface);
+	}
+	.border-inverse-surface {
+		border-color: var(--color-inverse-surface);
+	}
+	.ring-inverse-surface {
+		--tw-ring-color: var(--color-inverse-surface);
+	}
+	.bg-inverse-on-surface {
+		background: var(--color-inverse-on-surface);
+	}
+	.text-inverse-on-surface {
+		color: var(--color-inverse-on-surface);
+	}
+	.border-inverse-on-surface {
+		border-color: var(--color-inverse-on-surface);
+	}
+	.ring-inverse-on-surface {
+		--tw-ring-color: var(--color-inverse-on-surface);
+	}
+	.bg-inverse-primary {
+		background: var(--color-inverse-primary);
+	}
+	.text-inverse-primary {
+		color: var(--color-inverse-primary);
+	}
+	.border-inverse-primary {
+		border-color: var(--color-inverse-primary);
+	}
+	.ring-inverse-primary {
+		--tw-ring-color: var(--color-inverse-primary);
+	}
+}
