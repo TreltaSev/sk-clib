@@ -1,3 +1,10 @@
+## [1.8.1](https://github.com/TreltaSev/sk-clib/compare/v1.8.0...v1.8.1) (2025-08-22)
+
+
+### Bug Fixes
+
+* **building:** Changed theme types ([82b42c4](https://github.com/TreltaSev/sk-clib/commit/82b42c447b7d756c8c1e4d759b3a68ce8269b4d9))
+
 # [1.8.0](https://github.com/TreltaSev/sk-clib/compare/v1.7.0...v1.8.0) (2025-08-22)
 
 
