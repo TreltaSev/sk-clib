@@ -6,6 +6,10 @@
 		color: var(--color-on-background);
 	}
 
+	.bg-primary > * {
+		color: var(--color-primary)
+	}
+
 	.bg-primary-container > * {
 		color: var(--color-on-primary-container);
 	}
