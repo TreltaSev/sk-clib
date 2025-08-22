@@ -1,3 +1,13 @@
+# [1.9.0](https://github.com/TreltaSev/sk-clib/compare/v1.8.1...v1.9.0) (2025-08-22)
+
+
+### Features
+
+* **frame:** Add comments in properties declaration ([aefa0fd](https://github.com/TreltaSev/sk-clib/commit/aefa0fd289f0d049af6dae324152dac801201cd4))
+* **frame:** Add props to declarations ([80a437d](https://github.com/TreltaSev/sk-clib/commit/80a437def6403ab46cb173eb0980631a791bf6ec))
+* **frame:** Add theme properties ([b7bff21](https://github.com/TreltaSev/sk-clib/commit/b7bff21790c0a322d4006f6e3600483f390969dd))
+* **frame:** Add token instance options for backgroud ([8d38370](https://github.com/TreltaSev/sk-clib/commit/8d38370715889e3b8c60f79bc1b835dc4c284d55))
+
 ## [1.8.1](https://github.com/TreltaSev/sk-clib/compare/v1.8.0...v1.8.1) (2025-08-22)
 
 
