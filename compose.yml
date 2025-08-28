@@ -1,0 +1,20 @@
+services:
+  docs:
+    container_name: docs
+    build:
+      context: packages/docs
+      dockerfile: ./Dockerfile
+
+    volumes:
+      - ./packages/docs:/docs
+
+    ports:
+      - "3000:3000"
+
+    # Network Bridge
+    networks:
+      - docker-network
+
+networks:
+  docker-network:
+    driver: bridge

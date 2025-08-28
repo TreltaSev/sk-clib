@@ -1,6 +1,6 @@
 FROM oven/bun:latest
 
-WORKDIR /frontend
+WORKDIR /docs
 
 COPY package.json bun.lock ./
 
