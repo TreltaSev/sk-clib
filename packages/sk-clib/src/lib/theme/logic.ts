@@ -37,6 +37,7 @@ export function build(seedHex: string, mode: Mode = "dark", variant: Variant = "
 
 export function applyScheme(scheme: any) {
 	const map: Record<string, number> = {
+		"--color-seed": scheme.sourceColorArgb,
 		"--color-primary": scheme.primary,
 		"--color-on-primary": scheme.onPrimary,
 		"--color-primary-container": scheme.primaryContainer,
@@ -67,7 +68,6 @@ export function applyScheme(scheme: any) {
 		"--color-inverse-on-surface": scheme.inverseOnSurface,
 		"--color-inverse-primary": scheme.inversePrimary
 	}
-
 	const out: any = {}
 	const root = document.documentElement
 	for (const [name, argb] of Object.entries(map)) {

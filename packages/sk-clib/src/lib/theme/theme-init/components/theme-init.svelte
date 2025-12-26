@@ -15,6 +15,13 @@
 		}
 	}: Props = $props();
 
+	onMount(() => {
+		const colorSeed = document.documentElement.style.getPropertyValue("--color-seed")
+		if (colorSeed) {
+			theme.seedColor = colorSeed 
+		}
+	})
+
 	/**
 	 * Checks if the user already has a set md-theme
 	 */
@@ -41,13 +48,9 @@
 
 		// Build the theme with material utilities
 		const built = build(theme.seedColor, theme.mode, theme.variant);
-
+		
 		// Create css variables object and save to body
 		let applied = applyScheme(built);
-
-		// Inject Seed Color
-		applied["--color-primary-fallback"] = applied["--color-primary"]
-		applied["--color-primary"] = theme.seedColor
 
 		// Save the theme to the user's cookies
 		saveTheme(applied);
@@ -72,12 +75,10 @@
 		 */
 		function applyTheme(theme) {
 			if (theme === undefined) {
-				console.warn('No theme specified, defaulting to doing nothing');
 				return;
 			}
 
 			for (const [name, hex] of Object.entries(theme)) {
-				console.info(`Setting ${name} to ${hex}`);
 				document.documentElement.style.setProperty(name, hex);
 			}
 		}

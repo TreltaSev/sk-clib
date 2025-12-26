@@ -2,6 +2,11 @@
 
 /* Theme */
 @layer utilities {
+
+	.bg-seed > * {
+		color: var(--color-on-primary);
+	}
+
 	.bg-background > * {
 		color: var(--color-on-background);
 	}
@@ -69,6 +74,15 @@
 
 /* Tailwind-Like classes for color variables */
 @layer utilities {
+
+	.bg-seed {
+		background: var(--color-seed);
+	}
+
+	.bg-on-seed {
+		background: var(--color-on-primary)
+	}
+
 	.bg-primary {
 		background: var(--color-primary);
 	}
