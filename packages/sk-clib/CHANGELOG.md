@@ -1,3 +1,10 @@
+# [1.12.0](https://github.com/TreltaSev/sk-clib/compare/v1.11.0...v1.12.0) (2025-12-26)
+
+
+### Features
+
+* **color:** Default color fallback ([53b2289](https://github.com/TreltaSev/sk-clib/commit/53b2289807196aceec51f88947e3f2b39c910b6e))
+
 # [1.11.0](https://github.com/TreltaSev/sk-clib/compare/v1.10.0...v1.11.0) (2025-12-26)
 
 
