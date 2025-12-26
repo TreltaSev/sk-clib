@@ -19,6 +19,8 @@
 		const colorSeed = document.documentElement.style.getPropertyValue("--color-seed")
 		if (colorSeed) {
 			theme.seedColor = colorSeed 
+		} else {
+			theme.seedColor = defaults.defaultSeedColor
 		}
 	})
 
