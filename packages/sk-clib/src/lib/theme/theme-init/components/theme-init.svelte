@@ -48,6 +48,11 @@
 		theme.variant = fallback(theme.variant, defaults.defaultVariant);
 		theme.seedColor = fallback(theme.seedColor, defaults.defaultSeedColor);
 
+		if (theme.seedColor === "#000000") {
+			theme.seedColor = defaults.defaultSeedColor;
+			return
+		};
+
 		// Build the theme with material utilities
 		const built = build(theme.seedColor, theme.mode, theme.variant);
 		
