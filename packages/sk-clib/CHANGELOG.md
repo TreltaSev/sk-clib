@@ -1,3 +1,10 @@
+# [1.13.0](https://github.com/TreltaSev/sk-clib/compare/v1.12.0...v1.13.0) (2025-12-26)
+
+
+### Features
+
+* **colors:** Don't allow black as a primary ([252a123](https://github.com/TreltaSev/sk-clib/commit/252a123ebade09699e4bf6bce8a073d7e0bdb467))
+
 # [1.12.0](https://github.com/TreltaSev/sk-clib/compare/v1.11.0...v1.12.0) (2025-12-26)
 
 
