@@ -1,3 +1,11 @@
+# [1.10.0](https://github.com/TreltaSev/sk-clib/compare/v1.9.0...v1.10.0) (2025-12-26)
+
+
+### Features
+
+* **docker:** Added compose and dockerfile ([382bd94](https://github.com/TreltaSev/sk-clib/commit/382bd94603b8dc22a87a98948540ab5caab0f101))
+* **theme-init:** Moved seed color into primary ([954d6ae](https://github.com/TreltaSev/sk-clib/commit/954d6ae86b7db4b11ea8899eb553ead0867892b6))
+
 # [1.9.0](https://github.com/TreltaSev/sk-clib/compare/v1.8.1...v1.9.0) (2025-08-22)
 
 
