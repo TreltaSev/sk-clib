@@ -43,7 +43,11 @@
 		const built = build(theme.seedColor, theme.mode, theme.variant);
 
 		// Create css variables object and save to body
-		const applied = applyScheme(built);
+		let applied = applyScheme(built);
+
+		// Inject Seed Color
+		applied["--color-primary-fallback"] = applied["--color-primary"]
+		applied["--color-primary"] = theme.seedColor
 
 		// Save the theme to the user's cookies
 		saveTheme(applied);
