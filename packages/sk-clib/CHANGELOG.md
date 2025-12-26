@@ -1,3 +1,10 @@
+# [1.11.0](https://github.com/TreltaSev/sk-clib/compare/v1.10.0...v1.11.0) (2025-12-26)
+
+
+### Features
+
+* **theme:** Made update logic better ([c101dd8](https://github.com/TreltaSev/sk-clib/commit/c101dd8f3b686633713a5b670b5e4a1b7bb22493))
+
 # [1.10.0](https://github.com/TreltaSev/sk-clib/compare/v1.9.0...v1.10.0) (2025-12-26)
 
 
