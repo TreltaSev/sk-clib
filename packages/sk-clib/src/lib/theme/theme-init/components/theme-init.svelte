@@ -4,6 +4,8 @@
 	import type { Props } from '..';
 	import { onMount } from 'svelte';
 
+	import Cookie from "js-cookie";
+
 	// === State ===
 	import { theme, build, applyScheme, saveTheme } from '@lib/theme';
 
@@ -14,16 +16,7 @@
 			defaultSeedColor: '#f8b518'
 		}
 	}: Props = $props();
-
-	onMount(() => {
-		const colorSeed = document.documentElement.style.getPropertyValue("--color-seed")
-		if (colorSeed) {
-			theme.seedColor = colorSeed 
-		} else {
-			theme.seedColor = defaults.defaultSeedColor
-		}
-	})
-
+	
 	/**
 	 * Checks if the user already has a set md-theme
 	 */
@@ -41,23 +34,28 @@
 		return value === undefined ? _default : value;
 	}
 
+
+	$effect.pre(() => {
+		let mode = Cookie.get("theme.mode") || defaults.defaultMode
+		let variant = Cookie.get("theme.variant") || defaults.defaultVariant
+		let color = Cookie.get("theme.color") || defaults.defaultSeedColor
+	
+		theme.seedColor = color
+		theme.mode = mode
+		theme.variant = variant
+	})
+
+	$effect(() => {Cookie.set("theme.mode", theme.mode)})
+	$effect(() => {Cookie.set("theme.variant", theme.variant)})
+	$effect(() => {Cookie.set("theme.color", theme.seedColor)})
+
 	// Whenever any state changes, refresh theme
 	$effect(() => {
-		// Get fallback values
-		theme.mode = fallback(theme.mode, defaults.defaultMode);
-		theme.variant = fallback(theme.variant, defaults.defaultVariant);
-		theme.seedColor = fallback(theme.seedColor, defaults.defaultSeedColor);
-
-		if (theme.seedColor === "#000000") {
-			theme.seedColor = defaults.defaultSeedColor;
-			return
-		};
-
 		// Build the theme with material utilities
 		const built = build(theme.seedColor, theme.mode, theme.variant);
 		
 		// Create css variables object and save to body
-		let applied = applyScheme(built);
+		let applied = applyScheme(built, theme.seedColor, theme.mode, theme.variant);
 
 		// Save the theme to the user's cookies
 		saveTheme(applied);
