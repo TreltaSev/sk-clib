@@ -1,3 +1,10 @@
+## [1.13.1](https://github.com/TreltaSev/sk-clib/compare/v1.13.0...v1.13.1) (2026-01-04)
+
+
+### Bug Fixes
+
+* **theme:** Fixed theme management with work arounds ([d152926](https://github.com/TreltaSev/sk-clib/commit/d152926eff33833e28fd38b85a75236e913c0339))
+
 # [1.13.0](https://github.com/TreltaSev/sk-clib/compare/v1.12.0...v1.13.0) (2025-12-26)
 
 
