@@ -3,7 +3,7 @@
 	import { cn } from '@lib/utils';
 	import type { Props } from '..';
 
-	let { children, class: className, buttonClass = $bindable('px-4 py-2 rounded-md bg-[var(--color-primary)] color-[var(--color-white)]'), ...rest }: Props = $props();
+	let { children, class: className, buttonClass = $bindable('px-4 py-2 rounded-md bg-[var(--color-primary)] color-[var(--color-white)] w-fit'), ...rest }: Props = $props();
 
 
 	// Setup Button's Default Class
