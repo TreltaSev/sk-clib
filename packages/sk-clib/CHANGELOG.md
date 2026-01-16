@@ -1,3 +1,10 @@
+# [1.15.0](https://github.com/TreltaSev/sk-clib/compare/v1.14.0...v1.15.0) (2026-01-16)
+
+
+### Features
+
+* **button:** Optional href button attribute ([9d41276](https://github.com/TreltaSev/sk-clib/commit/9d41276ba6b821a32a5dd3f5eba51add74f6ba9c))
+
 # [1.14.0](https://github.com/TreltaSev/sk-clib/compare/v1.13.1...v1.14.0) (2026-01-16)
 
 
