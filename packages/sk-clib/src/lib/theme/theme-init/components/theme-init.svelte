@@ -16,7 +16,7 @@
 			defaultSeedColor: '#f8b518'
 		}
 	}: Props = $props();
-	
+
 	/**
 	 * Checks if the user already has a set md-theme
 	 */

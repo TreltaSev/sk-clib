@@ -1,6 +1,0 @@
----
-order: 2
-title: Contributing to Library
----
-
-Simply update a file within `packages/sk-clib`, this will trigger an update

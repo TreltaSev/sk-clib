@@ -1,6 +1,0 @@
----
-order: 1
-title: Components
----
-
-There are a fair bit of components in this component library (who would've thought)

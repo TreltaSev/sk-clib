@@ -1,0 +1,5 @@
+---
+type: section
+title: Components
+---
+Hi there from components

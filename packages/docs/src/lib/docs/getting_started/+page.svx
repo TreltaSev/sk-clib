@@ -1,9 +1,0 @@
----
-order: 0
-strong: true
-title: null
----
-
-<header>sk-clib</header>
-
-A flexible and modular component library built for my SvelteKit projects.

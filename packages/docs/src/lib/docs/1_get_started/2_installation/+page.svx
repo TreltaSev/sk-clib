@@ -1,0 +1,6 @@
+---
+type: subsection
+title: Installation
+---
+
+This is installation text
