@@ -1,3 +1,10 @@
+## [1.18.1](https://github.com/TreltaSev/sk-clib/compare/v1.18.0...v1.18.1) (2026-01-29)
+
+
+### Bug Fixes
+
+* **component:** Fixed input component ([48443e1](https://github.com/TreltaSev/sk-clib/commit/48443e1824b29d202364156d4f71f5d39fa8215b))
+
 # [1.18.0](https://github.com/TreltaSev/sk-clib/compare/v1.17.0...v1.18.0) (2026-01-29)
 
 
