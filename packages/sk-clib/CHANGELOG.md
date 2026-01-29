@@ -1,3 +1,10 @@
+# [1.18.0](https://github.com/TreltaSev/sk-clib/compare/v1.17.0...v1.18.0) (2026-01-29)
+
+
+### Features
+
+* **input:** Update input component ([5eb40fe](https://github.com/TreltaSev/sk-clib/commit/5eb40fe15811d49a3764aee718023b31277329b7))
+
 # [1.17.0](https://github.com/TreltaSev/sk-clib/compare/v1.16.0...v1.17.0) (2026-01-29)
 
 
