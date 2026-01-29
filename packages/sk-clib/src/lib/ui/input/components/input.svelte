@@ -2,6 +2,7 @@
 	// --- Logic ---
 	import { cn, uuidv4 } from '@lib/utils';
 	import type { Props } from '..';
+	import { Frame } from '@lib/ui';
 
 	let {
 		children,
