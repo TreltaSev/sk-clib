@@ -12,25 +12,25 @@
 		classLabel,
 
 		// Properties
-		type,
-		name,
-		id = undefined,
+		type = $bindable(undefined),
+		name = $bindable(undefined),
+		id = $bindable(undefined),
 
 		// Frame Passdown
-		flex,
-		row,
-		col,
-		center,
-		centerx,
-		centery,
-		fill,
-		fillw,
-		fillh,
-		noshrink,
-		aspectSquare,
-		cursorAuto,
-		cursorDefault,
-		cursorPointer,
+		flex = $bindable(undefined),
+		row = $bindable(undefined),
+		col = $bindable(undefined),
+		center = $bindable(undefined),
+		centerx = $bindable(undefined),
+		centery = $bindable(undefined),
+		fill = $bindable(undefined),
+		fillw = $bindable(undefined),
+		fillh = $bindable(undefined),
+		noshrink = $bindable(undefined),
+		aspectSquare = $bindable(undefined),
+		cursorAuto = $bindable(undefined),
+		cursorDefault = $bindable(undefined),
+		cursorPointer = $bindable(undefined),
 
 		...rest
 	}: Props = $props();
