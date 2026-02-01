@@ -1,3 +1,10 @@
+## [1.18.2](https://github.com/TreltaSev/sk-clib/compare/v1.18.1...v1.18.2) (2026-02-01)
+
+
+### Bug Fixes
+
+* **reactivity:** Classes are now reactive ([a901ea7](https://github.com/TreltaSev/sk-clib/commit/a901ea70a0f6b79c3f8ed1c6b39eddea6725deb3))
+
 ## [1.18.1](https://github.com/TreltaSev/sk-clib/compare/v1.18.0...v1.18.1) (2026-01-29)
 
 
