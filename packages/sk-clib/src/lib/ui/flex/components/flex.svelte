@@ -9,7 +9,7 @@
     
     let {
         children,
-        class: className,
+        class: className = $bindable(undefined),
         ...rest
     }: Props = $props();
 

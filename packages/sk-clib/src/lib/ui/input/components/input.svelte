@@ -8,8 +8,8 @@
 		children,
 
 		// Classes
-		classFrame,
-		class: className,
+		classFrame = $bindable(undefined),
+		class: className = $bindable(undefined),
 		classLabel,
 
 		// Properties

@@ -32,7 +32,7 @@
 
 	let {
 		children,
-		class: className,
+		class: className = $bindable(undefined),
 
 		// Sizing
 		size = 'md', // Catch All

@@ -5,7 +5,7 @@
 
 	let {
 		children,
-		class: className,
+		class: className = $bindable(undefined),
 
 		// Flex Box
 		flex = $bindable(undefined),

@@ -3,7 +3,7 @@
 	import { cn } from '@lib/utils';
 	import type { Props } from '..';
 
-	let { children, class: className, buttonClass = $bindable('px-4 py-2 rounded-md bg-[var(--color-primary)] color-[var(--color-white)] w-fit'), href, ...rest }: Props = $props();
+	let { children, class: className = $bindable(undefined), buttonClass = $bindable('px-4 py-2 rounded-md bg-[var(--color-primary)] color-[var(--color-white)] w-fit'), href, ...rest }: Props = $props();
 	
 	// Setup Button's Default Class
 	let buttonCls = $state(cn(buttonClass, className));
