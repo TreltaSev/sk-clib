@@ -1,3 +1,10 @@
+## [1.18.3](https://github.com/TreltaSev/sk-clib/compare/v1.18.2...v1.18.3) (2026-02-03)
+
+
+### Bug Fixes
+
+* **spacer:** class is reactive now ;( ([2bd4c67](https://github.com/TreltaSev/sk-clib/commit/2bd4c6768d32818d198c47a85ad5735be67b97cd))
+
 ## [1.18.2](https://github.com/TreltaSev/sk-clib/compare/v1.18.1...v1.18.2) (2026-02-01)
 
 
