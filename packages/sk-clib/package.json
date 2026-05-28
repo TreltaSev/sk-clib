@@ -1,6 +1,10 @@
 {
 	"name": "sk-clib",
-	"version": "1.18.7",
+	"version": "1.18.8",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/TreltaSev/sk-clib"
+	},
 	"type": "module",
 	"scripts": {
 		"dev": "vite dev",
