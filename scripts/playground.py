@@ -3,6 +3,7 @@ Able to create/re-create a playground to test out the sk-clib package.
 """
 
 import shutil
+import subprocess
 import sys
 
 from shared.project import project
@@ -46,7 +47,9 @@ def link():
     
 def start():
     # Start running the app
-    run(f"npm run dev", playground)
+    subprocess.run(
+        "npm run dev".split(" "), cwd=playground
+    )
 
 
 command = sys.argv[1:][0]
