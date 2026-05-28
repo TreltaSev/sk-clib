@@ -1,11 +1,45 @@
 {
 	"name": "sk-clib",
-	"version": "1.18.8",
+	"version": "1.18.9",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/TreltaSev/sk-clib"
 	},
 	"type": "module",
+	"files": [
+		"dist",
+		"!dist/**/*.test.*",
+		"!dist/**/*.spec.*",
+		"dist/styles.css"
+	],
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"svelte": "./dist/index.js"
+		},
+		"./ui": {
+			"types": "./dist/ui/index.d.ts",
+			"svelte": "./dist/ui/index.js"
+		},
+		"./style": {
+			"default": "./dist/styles.css"
+		},
+		"./theme": {
+			"types": "./dist/theme/index.d.ts",
+			"svelte": "./dist/theme/index.js",
+			"default": "./dist/theme/index.js"
+		}
+	},
+	"svelte": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"sideEffects": [
+		"**/*.css"
+	],
+	"keywords": [
+		"svelte",
+		"component",
+		"library"
+	],
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
@@ -39,5 +73,10 @@
 		"typescript-eslint": "^8.58.1",
 		"unplugin-icons": "^23.0.1",
 		"vite": "^8.0.7"
+	},
+	"dependencies": {
+		"@material/material-color-utilities": "^0.3.0",
+		"tailwind-merge": "^3.2.0",
+		"js-cookie": "^3.0.5"
 	}
 }
