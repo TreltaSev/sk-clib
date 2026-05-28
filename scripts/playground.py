@@ -43,6 +43,10 @@ def link():
 
     # Link sk-clib to playground
     run(f"npm link sk-clib", playground)
+    
+def start():
+    # Start running the app
+    run(f"npm run dev", playground)
 
 
 command = sys.argv[1:][0]
@@ -51,8 +55,15 @@ if command == "create":
     console.info("Creating playground...")
     create()
     
-if command == "link":
+elif command == "link":
     console.info("Linking sk-clib to playground...")
     link()
+    
+elif command == "start":
+    console.info("Starting Development Server...")
+    start()
+    
+else:
+    console.error("Missing match, create|link|start")
     
 console.info("Finished...")
