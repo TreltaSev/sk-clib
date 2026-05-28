@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { argbFromHex, SchemeTonalSpot, Hct, hexFromArgb, SchemeContent, SchemeExpressive, SchemeFidelity, SchemeFruitSalad, SchemeMonochrome, SchemeNeutral, SchemeRainbow, SchemeVibrant } from '@material/material-color-utilities';
 
-import { Mode, Variant } from "./types"
+import type { Mode, Variant } from './types.js';
 
 export function saveTheme(theme: object) {
 	const expires = new Date();

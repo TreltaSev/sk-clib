@@ -12,11 +12,11 @@
 	});
 </script>
 
+asd
+
 {#if href}
-	<a {href}>
-		<button class={cn(buttonCls)} {...rest} tabindex="0">
-			{@render children?.()}
-		</button>
+	<a {href} class={cn(buttonCls)} {...rest} tabindex="0">
+		{@render children?.()}
 	</a>
 {:else}
 	<button class={cn(buttonCls)} {...rest} tabindex="0">

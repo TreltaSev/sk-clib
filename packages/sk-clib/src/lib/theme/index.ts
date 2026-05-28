@@ -7,3 +7,6 @@ export type { tThemeInitProps } from './theme-init/types';
 
 // Logic
 export * from "./logic"
+
+// Types
+export * from './types.js';
