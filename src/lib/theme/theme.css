@@ -1,0 +1,162 @@
+@import 'tailwindcss';
+
+
+/* ! ========== Theme ========= */
+@theme {
+	/* Palettes [PA] */
+	--color-primary-palette-key-color: var(--md-primary-palette-key-color);
+	--color-secondary-palette-key-color: var(--md-secondary-palette-key-color);
+	--color-tertiary-palette-key-color: var(--md-tertiary-palette-key-color);
+	--color-neutral-palette-key-color: var(--md-neutral-palette-key-color);
+	--color-neutral-variant-palette-key-color: var(--md-neutral-variant-palette-key-color);
+
+	/* Surfaces [S] */
+	--color-background: var(--md-background);
+	--color-on-background: var(--md-on-background);
+	--color-surface: var(--md-surface);
+	--color-surface-dim: var(--md-surface-dim);
+	--color-surface-bright: var(--md-surface-bright);
+	--color-surface-container-lowest: var(--md-surface-container-lowest);
+	--color-surface-container-low: var(--md-surface-container-low);
+	--color-surface-container: var(--md-surface-container);
+	--color-surface-container-high: var(--md-surface-container-high);
+	--color-surface-container-highest: var(--md-surface-container-highest);
+	--color-on-surface: var(--md-on-surface);
+	--color-on-surface-variant: var(--md-on-surface-variant);
+	--color-outline: var(--md-outline);
+	--color-outline-variant: var(--md-outline-variant);
+	--color-inverse-surface: var(--md-inverse-surface);
+	--color-inverse-on-surface: var(--md-inverse-on-surface);
+	--color-shadow: var(--md-shadow);
+	--color-scrim: var(--md-shadow);
+	--color-surface-variant: var(--md-surface-variant);
+	--color-surface-tint: var(--md-surface-tint);
+
+	/* Primaries [P] */
+	--color-primary: var(--md-primary);
+	--color-primary-dim: var(--md-primary-dim);
+	--color-on-primary: var(--md-on-primary);
+	--color-primary-container: var(--md-primary-container);
+	--color-on-primary-container: var(--md-on-primary-container);
+	--color-primary-fixed: var(--md-primary-fixed);
+	--color-primary-fixed-dim: var(--md-primary-fixed-dim);
+	--color-on-primary-fixed: var(--md-on-primary-fixed);
+	--color-on-primary-fixed-variant: var(--md-on-primary-fixed-variant);
+	--color-inverse-primary: var(--md-inverse-primary);
+
+	/* Secondaries [S] */
+	--color-secondary: var(--md-secondary);
+	--color-secondary-dim: var(--md-secondary-dim);
+	--color-on-secondary: var(--md-on-secondary);
+	--color-secondary-container: var(--md-secondary-container);
+	--color-on-secondary-container: var(--md-on-secondary-container);
+	--color-secondary-fixed: var(--md-secondary-fixed);
+	--color-secondary-fixed-dim: var(--md-secondary-fixed-dim);
+	--color-on-secondary-fixed: var(--md-on-secondary-fixed);
+	--color-on-secondary-fixed-variant: var(--md-on-secondary-fixed-variant);
+
+	/* Tertiaries [T] */
+	--color-tertiary: var(--md-tertiary);
+	--color-tertiary-dim: var(--md-tertiary-dim);
+	--color-on-tertiary: var(--md-on-tertiary);
+	--color-tertiary-container: var(--md-tertiary-container);
+	--color-on-tertiary-container: var(--md-on-tertiary-container);
+	--color-tertiary-fixed: var(--md-tertiary-fixed);
+	--color-tertiary-fixed-dim: var(--md-tertiary-fixed-dim);
+	--color-on-tertiary-fixed: var(--md-on-tertiary-fixed);
+	--color-on-tertiary-fixed-variant: var(--md-on-tertiary-fixed-variant);
+
+	/* Errors [E] */
+	--color-error: var(--md-error);
+	--color-error-dim: var(--md-error-dim);
+	--color-on-error: var(--md-on-error);
+	--color-error-container: var(--md-error-container);
+	--color-on-error-container: var(--md-on-error-container);
+}
+
+
+/* ! ========== Components ========= */
+@layer components {
+	/* Surfaces [S] */
+	.surface-background {
+		@apply bg-background text-on-background;
+	}
+
+	.surface {
+		@apply bg-surface text-on-surface;
+	}
+
+	.surface-variant {
+		@apply bg-surface-variant text-on-surface-variant;
+	}
+
+	/* Primaries [P] */
+	.surface-primary {
+		@apply bg-primary text-on-primary;
+	}
+
+	.surface-primary-container {
+		@apply bg-primary-container text-on-primary-container;
+	}
+
+	.surface-primary-fixed {
+		@apply bg-primary-fixed text-on-primary-fixed;
+	}
+
+	.surface-primary-fixed-variant {
+		@apply bg-primary-fixed-dim text-on-primary-fixed-variant;
+	}
+
+	/* Secondaries [S] */
+	.surface-secondary {
+		@apply bg-secondary text-on-secondary;
+	}
+
+	.surface-secondary-container {
+		@apply bg-secondary-container text-on-secondary-container;
+	}
+
+	.surface-secondary-fixed {
+		@apply bg-secondary-fixed text-on-secondary-fixed;
+	}
+
+	.surface-secondary-fixed-variant {
+		@apply bg-secondary-fixed-dim text-on-secondary-fixed-variant;
+	}
+
+	/* Tertiaries [T] */
+	.surface-tertiary {
+		@apply bg-tertiary text-on-tertiary;
+	}
+
+	.surface-tertiary-container {
+		@apply bg-tertiary-container text-on-tertiary-container;
+	}
+
+	.surface-tertiary-fixed {
+		@apply bg-tertiary-fixed text-on-tertiary-fixed;
+	}
+
+	.surface-tertiary-fixed-variant {
+		@apply bg-tertiary-fixed-dim text-on-tertiary-fixed-variant;
+	}
+
+	/* Errors [E] */
+	.surface-error {
+		@apply bg-error text-on-error;
+	}
+
+	.surface-error-container {
+		@apply bg-error-container text-on-error-container;
+	}
+}
+
+/* ! ========== Base ========== */
+@layer base {
+	html,
+	body {
+		@apply size-full;
+		margin: 0;
+		padding: 0;
+	}
+}
