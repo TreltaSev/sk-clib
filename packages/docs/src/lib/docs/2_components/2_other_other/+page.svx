@@ -1,5 +1,0 @@
----
-type: subsection
-name: Other Other
----
-Something Other Other

@@ -1,2 +1,0 @@
-export { DocsHandler } from "./handler";
-

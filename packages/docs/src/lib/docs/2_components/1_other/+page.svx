@@ -1,5 +1,0 @@
----
-type: subsection
-title: Other
----
-Something Other
