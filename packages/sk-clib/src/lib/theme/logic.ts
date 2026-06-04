@@ -60,7 +60,7 @@ export function build(
  *
  * @param scheme Generated scheme that will be applied to the root element
  */
-export function applyScheme(scheme: DynamicScheme) {
+export function applyScheme(scheme: DynamicScheme): Record<string, any> {
 	const mode = scheme.isDark ? 'dark' : 'light';
 	const variant = Object.values(PVariant)[scheme.variant].toString().toLowerCase();
 
@@ -78,15 +78,18 @@ export function applyScheme(scheme: DynamicScheme) {
         "neutralPaletteKeyColor",
         "neutralVariantPaletteKeyColor"
     ]
+	
+	// This variable will be saved in the cookies, also what is returned.
+	let cached_scheme: Record<string, any> = {};
     
     // Set the color properties
     const allColors = [...scheme.colors.allColors, ...missingColors]
 	allColors.forEach((dynamicColor) => {
 		const colorName = typeof dynamicColor === 'string' ? dynamicColor : dynamicColor.name;
-		console.log(colorName)
         const prop = snakeOrKebabToCamel(colorName) as keyof DynamicScheme;
 		const value = scheme[prop] as unknown as number;
 		root.style.setProperty(`--md-${snakeToKebab(colorName)}`, hexFromArgb(value));
+		cached_scheme[`--md-${snakeToKebab(colorName)}`] = hexFromArgb(value);
 	});
 
 	const conf_out = {
@@ -95,10 +98,15 @@ export function applyScheme(scheme: DynamicScheme) {
 		'--md-variant': variant
 	};
 
+	// Add conf_out to cached_scheme
+	cached_scheme = {...cached_scheme, ...conf_out};
+
     // Set the config properties
 	for (const [key, value] of Object.entries(conf_out)) {
 		root.style.setProperty(key, value);
 	}
+
+	return cached_scheme;
 }
 
 /**

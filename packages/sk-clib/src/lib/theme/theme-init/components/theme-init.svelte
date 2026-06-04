@@ -38,7 +38,7 @@
 		const built = build(theme.seedColor, theme.mode, theme.variant);
 		
 		// Create css variables object and save to body
-		let applied = applyScheme(built, theme.seedColor, theme.mode, theme.variant);
+		let applied = applyScheme(built);
 
 		// Save the theme to the user's cookies
 		saveTheme(applied);
