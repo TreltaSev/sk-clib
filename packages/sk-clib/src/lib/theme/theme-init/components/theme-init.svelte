@@ -8,6 +8,7 @@
 
 	// === State ===
 	import { theme, build, applyScheme, saveTheme } from '@theme';
+	import { parse } from 'svelte/compiler';
 
 	const {
 		defaults = {
@@ -53,7 +54,13 @@
 		 */
 		function getTheme() {
 			const match = document.cookie.match(/(?:^|;\s*)md-theme=([^;]*)/);
-			return match ? JSON.parse(decodeURIComponent(match[1])) : undefined;
+
+			let parsed = undefined;
+			try {
+				parsed = JSON.parse(decodeURIComponent(match[1]))
+			} catch {/* Do Nothing */}
+
+			return parsed ? parsed : undefined;
 		}
 
 		/**
