@@ -9,7 +9,7 @@
 	--color-secondary-palette-key-color: var(--md-secondary-palette-key-color);
 	--color-tertiary-palette-key-color: var(--md-tertiary-palette-key-color);
 	--color-neutral-palette-key-color: var(--md-neutral-palette-key-color);
-	--color-neutral-variant-palette-key-color: var(--md-neutral-variant-palette-key-color);
+--color-neutral-variant-palette-key-color: var(--md-neutral-variant-palette-key-color);
 
 	/* Surfaces [S] */
 	--color-background: var(--md-background);

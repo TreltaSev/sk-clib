@@ -12,8 +12,6 @@
 	});
 </script>
 
-asd
-
 {#if href}
 	<a {href} class={cn(buttonCls)} {...(rest as any)} tabindex="0">
 		{@render children?.()}
