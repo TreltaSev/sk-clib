@@ -4,6 +4,7 @@
 /* ! ========== Theme ========= */
 @theme {
 	/* Palettes [PA] */
+	--color-seed: var(--md-seed);
 	--color-primary-palette-key-color: var(--md-primary-palette-key-color);
 	--color-secondary-palette-key-color: var(--md-secondary-palette-key-color);
 	--color-tertiary-palette-key-color: var(--md-tertiary-palette-key-color);
