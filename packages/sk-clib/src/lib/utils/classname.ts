@@ -5,7 +5,9 @@ import { twMerge } from 'tailwind-merge';
 /**
  * Fix class naming conflicts by utilizing both :function:`twMerge` and :function:`clsx`
  * clsx allows very precise boolean specific class loading and twMerge removes all the conflicting but unused classes.
- * @param inputs All base classes
+ * @public
+ * 
+ * @param inputs - All base classes
  * @returns Merged classes
  */
 export function cn(...inputs: (ClassValue | unknown)[]) {
@@ -16,6 +18,7 @@ export function cn(...inputs: (ClassValue | unknown)[]) {
  * Allows for easy creation of data attribute specific classes in tailwind.
  * First, you create the builder while specifying the root selector. then you can call
  * `cn_a.build('bg-black')`.
+ * @public
  *
  * ## Usage
  * ```ts
@@ -36,7 +39,8 @@ export class cn_a {
 
 	/**
 	 * Returns a string of all the classes with the attribute selector attached
-	 * @param {string} classes tailwind/css classes string
+	 * 
+	 * @param classes - tailwind/css classes string
 	 * @returns
 	 */
 	build(classes: string) {
@@ -62,8 +66,9 @@ export class cn_a {
 	}
 
 	/**
-	 *
-	 * @param selector some sort of boolean expression like state=toggled...
+	 * Wraps a given selector with a data attribute
+	 * 
+	 * @param selector - some sort of boolean expression like state=toggled...
 	 * @returns `data-[${selector}]`
 	 */
 	public static wrap_selector(selector: string) {
@@ -71,9 +76,11 @@ export class cn_a {
 	}
 
 	/**
-	 *
-	 * @param selector data attribute selector like state=toggled
-	 * @param classes
+	 * I honestly forgot what this function does, but I used it somewhere... 
+	 * It is now future me's problem
+	 * 
+	 * @param selector - data attribute selector like state=toggled
+	 * @param classes - Classname string
 	 */
 	public static buildx(selector: string, classes: string) {
 		// Convert a class string such as "bg-black flex flex-col" into ["bg-black", "flex", "flex-col"]
@@ -92,7 +99,8 @@ export class cn_a {
 /**
  * A utility class for dynamically building class names based on conditional logic.
  * This class is particularly useful for managing conditional class tokens in a structured way.
- *
+ * @public
+ * 
  * ## Example Usage
  * ```typescript
  * let sm: undefined | boolean = true;
@@ -107,7 +115,8 @@ export class Tokenizer {
 
 	/**
 	 * Initializes a new instance of the `Tokenizer` class with an optional initial class name.
-	 * @param className The initial class name to start with. Defaults to an empty string.
+	 * 
+	 * @param className - The initial class name to start with. Defaults to an empty string.
 	 */
 	constructor(className: string | null | undefined | ClassValue = "") {
 		this.className = className || "";
@@ -115,8 +124,9 @@ export class Tokenizer {
 
 	/**
 	 * Adds a class token to the `className` property if the provided statement evaluates to `true`.
-	 * @param statement A condition that determines whether the token should be added.
-	 * @param token The class token to add if the condition is met.
+	 * 
+	 * @param statement - A condition that determines whether the token should be added.
+	 * @param token - The class token to add if the condition is met.
 	 */
 	public addTokenIf(statement: any, token: string) {
 		if (statement === true) {

@@ -34,12 +34,12 @@ const VARIANTMAP: Record<Variant, any> = {
 
 /**
  * Returns a dictionary representation of a generated color pallette given a `seed` `mode` and `contrast`
+ * @internal
  *
- *
- * @param seed Hex color string like `#ff0000`
- * @param mode Chooses light/dark rendering
- * @param variant Selects the algorithm variant
- * @param contrast is a -1..1 modifier for contrast
+ * @param seed - Hex color string like `#ff0000`
+ * @param mode - Chooses light/dark rendering
+ * @param variant - Selects the algorithm variant
+ * @param contrast - is a -1..1 modifier for contrast
  */
 export function build(
 	seed: string,
@@ -57,8 +57,9 @@ export function build(
 
 /**
  * Applies a given scheme to the root document element
- *
- * @param scheme Generated scheme that will be applied to the root element
+ * @internal
+ * 
+ * @param scheme - Generated scheme that will be applied to the root element
  */
 export function applyScheme(scheme: DynamicScheme): Record<string, any> {
 	const mode = scheme.isDark ? 'dark' : 'light';
@@ -111,8 +112,9 @@ export function applyScheme(scheme: DynamicScheme): Record<string, any> {
 
 /**
  * Stores the theme as a string in cookies 
+ * @internal
  * 
- * @param theme JSON object to store
+ * @param theme - JSON object to store
  */
 export function saveTheme(theme: object) {
 	const expires = new Date();

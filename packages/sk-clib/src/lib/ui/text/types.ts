@@ -1,6 +1,9 @@
 import type { HTMLAttributes } from 'svelte/elements';
 import type { tHeaderWeights } from '../header/types';
 
+/**
+ * Representation of semantic sizes to header element
+ */
 export type tTextSizes = {
 	xxl: 'h1';
 	xl: 'h2';
@@ -9,6 +12,10 @@ export type tTextSizes = {
 	sm: 'h5';
 };
 
+
+/**
+ * List of valid html tags that can be used with the text element
+ */
 export const tags = [
 	'p',
 	'blockquote',
@@ -32,7 +39,13 @@ export const tags = [
 	'b',
 	'i',
 	'u',
-	'span'
+	'span',
+	'h1',
+	'h2',
+	'h3',
+	'h4',
+	'h5',
+	'h6'
 ] as const;
 
 export type tTextTypes = (typeof tags)[number];
@@ -45,20 +58,34 @@ export type tTextWeights = {
 	extrabold: 'font-extrabold';
 };
 
+/**
+ * Text Element Properties
+ * @internal
+ * 
+ */
 export type tTextProps = HTMLAttributes<HTMLDivElement> & {
 
-    // As Element
+    /**
+	 * The element that the text element will take
+	 */
     as?: tTextTypes;
 
     // Sizes
-    size?: keyof tTextSizes; // Catch All
+
+	/**
+	 * Semantic size option for the text element
+	 */
+    size?: keyof tTextSizes;
+
     xxl?: boolean;
 	xl?: boolean;
 	lg?: boolean;
 	md?: boolean;
 	sm?: boolean;
     
-    // Weights
+    /**
+	 * Semantic bolding option for the text element
+	 */
     weight?: keyof tHeaderWeights; // Catch All
     extrabold?: boolean;
 	bold?: boolean;
@@ -66,6 +93,8 @@ export type tTextProps = HTMLAttributes<HTMLDivElement> & {
 	regular?: boolean;
 	light?: boolean;
 
-    // Italicization
+    /**
+	 * Whether or not the text is italicized
+	 */
     em?: boolean;
 };

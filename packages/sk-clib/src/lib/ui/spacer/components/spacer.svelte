@@ -44,6 +44,8 @@
         width (undefined|boolean) = undefined: Expands the component to the most width it can occupy
         height (undefined|boolean) = undefined: Expands the component to the most height it can occupy
     ---
+
+	@public
     
     Element that is soley made to fill in space. If nothing is passed, assumes 'size-full',
     otherwise, it fills the direction you tell it to.
