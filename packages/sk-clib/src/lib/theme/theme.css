@@ -30,8 +30,8 @@
 	--color-inverse-on-surface: var(--md-inverse-on-surface);
 	--color-shadow: var(--md-shadow);
 	--color-scrim: var(--md-shadow);
-	--color-surface-variant: var(--md-surface-variant);
-	--color-surface-tint: var(--md-surface-tint);
+	--color-surface-variant: var(--md-surfacevariant);
+	--color-surface-tint: var(--md-surfacetint);
 
 	/* Primaries [P] */
 	--color-primary: var(--md-primary);
