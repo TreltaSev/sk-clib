@@ -82,13 +82,17 @@ export function applyScheme(scheme: DynamicScheme): Record<string, any> {
 	
 	// This variable will be saved in the cookies, also what is returned.
 	let cached_scheme: Record<string, any> = {};
-    
     // Set the color properties
     const allColors = [...scheme.colors.allColors, ...missingColors]
 	allColors.forEach((dynamicColor) => {
 		const colorName = typeof dynamicColor === 'string' ? dynamicColor : dynamicColor.name;
         const prop = snakeOrKebabToCamel(colorName) as keyof DynamicScheme;
-		const value = scheme[prop] as unknown as number;
+		let value = scheme[prop] as unknown as number;
+
+		if (!value) {
+			value = (scheme as any)[colorName] as number
+		}
+
 		root.style.setProperty(`--md-${snakeToKebab(colorName)}`, hexFromArgb(value));
 		cached_scheme[`--md-${snakeToKebab(colorName)}`] = hexFromArgb(value);
 	});
